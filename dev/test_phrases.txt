@@ -1,0 +1,29 @@
+1	Nagugutom si Ramón.
+1	Gigutom si Ramón.
+	
+2	Gwapo si Roberto.
+2	Gwapo si Roberto.
+	
+3	Nakita ni Alejandra si Juan.
+3	Nakit-an ni Alejandra si Juan.
+	
+4	Pupunta sina Isabela at Gloria sa bahay ni Juan.
+4	Mangadto silang Isabela ug Gloria sa balay ni Juan.
+	
+5	Asa ang mga libro?
+5	Nasaan ang mga libro?
+	
+6	To-a kang Carlos ang yawe.
+6	Nan doon ang susi ni Carlos.
+	
+7	Parang buko si Paolo.
+7	Murag Butong si Paolo.
+	
+8	Masarap ang pagkain.
+8	Lami nga pagkaon.
+
+9	Nang pasimula ay nilikha ng Dios ang langit at ang lupa. 
+9	Sa sinugdan gibuhat sa Dios ang langit ug ang yuta.
+
+10	At nagkahapon at nagkaumaga ang ikatlong araw. 
+10	Ug dihay kahaponon ug dihay kabuntagon, adlaw nga ikatolo.

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionary>
+   <alphabet/>
+   <sdefs>
+     <sdef n="n"/>
+     <sdef n="part"/>
+     <sdef n="prn"/>
+     <sdef n="cnjcoo"/>
+     <sdef n="cnjsub"/>
+     <sdef n="sg"/>
+     <sdef n="pl"/>
+   </sdefs>
+
+   <section id="main" type="standard">
+    <e><p><l>mga<s n="part"/></l><r>mga<s n="part"/></r></p></e>
+
+    <e><p><l>na<s n="part"/></l><r>na<s n="part"/></r></p></e>
+    <e><p><l>pa<s n="part"/></l><r>pa<s n="part"/></r></p></e>
+    <e><p><l>ba<s n="part"/></l><r>ba<s n="part"/></r></p></e>
+    <e><p><l>lamang<s n="part"/></l><r>lang<s n="part"/></r></p></e>
+    <e><p><l>kasi<s n="part"/></l><r>kay<s n="part"/></r></p></e>
+    <e><p><l>man<s n="part"/></l><r>man<s n="part"/></r></p></e>
+    <e><p><l>din<s n="part"/></l><r>usab<s n="part"/></r></p></e>
+
+    <e><p><l>at<s n="cnjcoo"/></l><r>ug<s n="part"/></r></p></e>
+
+    <e><p><l>dahil<s n="cnjsub"/></l><r>tungod<s n="cnjsub"/></r></p></e>
+
+    <e><p><l>sa<s n="pr"/></l><r>sa<s n="pr"/></r></p></e>
+    <e><p><l>ng<s n="pr"/></l><r>nga<s n="pr"/></r></p></e>
+
+    <e><p><l>ako<s n="prn"/></l><r>ako<s n="prn"/></r></p></e>
+
+    <e><p><l>aso<s n="n"/></l><r>iro<s n="n"/></r></p></e>
+    <e><p><l>lalaki<s n="n"/></l><r>lalaki<s n="n"/></r></p></e>
+    <e><p><l>langit<s n="n"/></l><r>langit<s n="n"/></r></p></e>
+    <e><p><l>lupa<s n="n"/></l><r>yuta<s n="n"/></r></p></e>
+    <e><p><l>bahay<s n="n"/></l><r>balay<s n="n"/></r></p></e>
+   </section>
+</dictionary>

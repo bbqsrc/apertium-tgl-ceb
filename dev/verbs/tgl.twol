@@ -1,0 +1,56 @@
+Alphabet 
+
+  p t k a e i o u m n h b
+
+  E:a E:i E:o E:u E:e
+  R:p R:b R:t R:k
+
+  @P.ACT3.ON@  @P.ACT1.ON@
+  %+:0 %>:0 %^UM:0 ;
+
+Sets
+
+  Cons = p t k b ; 
+  Vow = a e i o u ;
+  Nas = m n ;
+
+Rules
+
+! bili>in --> bilhin
+"Replace final i with h before suffixes beginning with i" 
+i:h <=> _ %>:0 i ;
+
+!€ bili%>in
+!€ bilh0in
+
+! man>bili --> mambili
+
+"Nasal assimilation"
+n:m <=> _ %>:0 b: ; 
+
+!€ man%>bili
+!€ mam0bili
+
+! mambili --> mamili
+
+"Nasal deletion"
+b:0 <=> :m %>:0 _ ;
+
+!€ mam%>bili
+!€ mam00ili
+
+
+	
+! %^UM>bili --> bumili
+!"Infix insertion"
+!%^UM:0 <=> %>:0 _ @P.ACT1.ON@ ; 
+
+!€ %^UM%>bili
+!€ 00bumili
+
+!"R realisation as Consonant"
+!R:CC <=> _ E: %+: CC ; where CC in Cons ;
+
+!"E realisation as Vowel"
+!E:VV <=> _ %+: (Cons:) VV ; where VV in Vow ;
+
