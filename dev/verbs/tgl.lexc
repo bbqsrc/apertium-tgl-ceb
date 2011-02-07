@@ -5,10 +5,72 @@ Multichar_Symbols  +V +Inf +Cont +Prog +Comp +Imp
 				   +Dir +Recip ! unused at the moment
                    +INF ! this for testing
 
-				   @P.PREF.pang@ @R.PREF.pang@
-				   @P.PREF.pag@ @R.PREF.pag@
-				   @P.PREF.i@ @R.PREF.i@
-                   %> %^UM %^INF %^IN
+                   %> %^UM %^INF %^IN %^FILL
+
+                   @D.PREF@ @C.PREF@
+				   @D.INFX@ @C.INFX@
+
+				   @P.PREF.i@
+                   @P.PREF.mag@
+                   @P.PREF.ma@
+                   @P.PREF.mang@
+                   @P.PREF.ipaN@
+                   @P.PREF.ika@
+                   @P.PREF.CV@
+                   @P.PREF.iCV@
+                   @P.PREF.magCV@
+                   @P.PREF.maCV@
+                   @P.PREF.mangCV@
+                   @P.PREF.ipaNCV@
+                   @P.PREF.ikaCV@
+                   @P.PREF.CinV@
+                   @P.PREF.iCinV@
+                   @P.PREF.CumV@
+                   @P.PREF.nagCV@
+                   @P.PREF.naCV@
+                   @P.PREF.nangCV@
+                   @P.PREF.ipinaNCV@
+                   @P.PREF.ikinaCV@
+                   @P.PREF.nag@
+                   @P.PREF.na@
+                   @P.PREF.nang@
+                   @P.PREF.ipinaN@
+                   @P.PREF.ikina@
+                   @P.PREF.pang@
+                   @P.PREF.pag@
+                  
+				   @R.PREF.i@
+                   @R.PREF.mag@
+                   @R.PREF.ma@
+                   @R.PREF.mang@
+                   @R.PREF.ipaN@
+                   @R.PREF.ika@
+                   @R.PREF.CV@
+                   @R.PREF.iCV@
+                   @R.PREF.magCV@
+                   @R.PREF.maCV@
+                   @R.PREF.mangCV@
+                   @R.PREF.ipaNCV@
+                   @R.PREF.ikaCV@
+                   @R.PREF.CinV@
+                   @R.PREF.iCinV@
+                   @R.PREF.CumV@
+                   @R.PREF.nagCV@
+                   @R.PREF.naCV@
+                   @R.PREF.nangCV@
+                   @R.PREF.ipinaNCV@
+                   @R.PREF.ikinaCV@
+                   @R.PREF.nag@
+                   @R.PREF.na@
+                   @R.PREF.nang@
+                   @R.PREF.ipinaN@
+                   @R.PREF.ikina@
+                   @R.PREF.pang@
+                   @R.PREF.pag@
+
+                   @P.INFX.in@
+
+				   @R.INFX.in@
 
 ! Possible optimisations:
 !
@@ -17,16 +79,43 @@ Multichar_Symbols  +V +Inf +Cont +Prog +Comp +Imp
 LEXICON Root
 
 Prefixes ;
-Infixes ;
-Stems ; ! empty entry
+PrefixesRegex ;
+!Infixes ;
+!@C.PREF@@C.INFX@
+@D.PREF@	Stems ; ! empty entry
 
 
 LEXICON Prefixes
 @P.PREF.i@:i%>					Stems ;
+@P.PREF.mag@:mag%>				Stems ;
+@P.PREF.ma@:ma%>				Stems ;
+@P.PREF.mang@:mang%>			Stems ;
+@P.PREF.ika@:ika%>				Stems ;
+@P.PREF.nag@:nag%>				Stems ;
+@P.PREF.na@:na%>				Stems ;
+@P.PREF.nang@:nang%>			Stems ;
+@P.PREF.ikina@:ikina%>			Stems ;
 @P.PREF.pang@:pang%>			Stems ;
 @P.PREF.pag@:pag%>				Stems ;
-!@P.ACT3.ON@:man%> 				Stems ;
-RE+           					Stems ;
+
+LEXICON PrefixesRegex
+@P.PREF.ipaN@:ipaN%>			Stems ;
+@P.PREF.CV@RE+          		Stems ;
+@P.PREF.iCV@:iR%^FILLE%>		Stems ;
+@P.PREF.magCV@:magRE%>			Stems ;
+@P.PREF.maCV@:maRE%>			Stems ;
+@P.PREF.mangCV@:mangRE%>		Stems ;
+@P.PREF.ipaNCV@:ipaNRE%>		Stems ;
+@P.PREF.ikaCV@:ikaRE%>			Stems ;
+@P.PREF.CinV@:RinE%>			Stems ;
+@P.PREF.iCinV@:iRinE%>			Stems ;
+@P.PREF.CumV@:RumE%>			Stems ;
+@P.PREF.nagCV@:nagRE%>			Stems ;
+@P.PREF.naCV@:naRE%>			Stems ;
+@P.PREF.nangCV@:nangRE%>		Stems ;
+@P.PREF.ipinaNCV@:ipinaNRE%>	Stems ;
+@P.PREF.ikinaCV@:ikinaRE%>		Stems ;
+@P.PREF.ipinaN@:ipinaN%>		Stems ;
 
 LEXICON Infixes
 @P.OBJPRO.ON@:iR%^INE%> Stems ; 
@@ -35,26 +124,29 @@ LEXICON Infixes
 
 
 LEXICON Stems
-bili           VConjReg ; ! "buy" 
-palit          VConjReg ; ! "revise (change)"
+bili           RegSuffixes ; ! "buy" 
+palit          RegSuffixes ; ! "revise (change)"
 
 
-LEXICON VConjReg
+LEXICON RegSuffixes
 
 !-------------!
 ! Infinitives !
 !-------------!
+! Pure infinitive
+@D.PREF@+V+Inf:				#;
+
 ! Obj trigger I
-+V+Inf+Obj1:%>in	#; 
+@D.PREF@+V+Inf+Obj1:%>in	#; 
 
 ! Obj Trigger II
 @R.PREF.i@+V+Inf+Obj2:		#;
 
 ! Obj Trigger III
-+V+Inf+Obj3:%>an	#; 
+@D.PREF@+V+Inf+Obj3:%>an	#; 
 
 ! Actor Trigger I
-+V+Inf+Act1:		#;
+@D.PREF@+V+Inf+Act1:		#;
 
 ! Actor Trigger II 
 @R.PREF.mag@+V+Inf+Act2:		#;
@@ -66,7 +158,7 @@ LEXICON VConjReg
 @R.PREF.mang@+V+Inf+Act4:		#;
 
 ! Locative Trigger
-+V+Inf+Loc:%>an		#;
+@D.PREF@+V+Inf+Loc:%>an		#;
 
 ! Benefactive Trigger
 @R.PREF.i@+V+Inf+Ben:			#;
@@ -155,16 +247,16 @@ LEXICON VConjReg
 ! Completed   !
 !-------------!
 ! Obj trigger I
-+V+Comp+Obj1:		#;  
+@D.PREF@+V+Comp+Obj1:		#;  
 
 ! Obj Trigger II
-@R.PREF.i@+V+Comp+Obj2:		#;
+@R.PREF.i@@R.INFX.in@+V+Comp+Obj2:		#;
 
 ! Obj Trigger III
-+V+Comp+Obj3:%>an	#; 
+@D.PREF@+V+Comp+Obj3:%>an	#; 
 
 ! Actor Trigger I
-+V+Comp+Act1:		#;
+@D.PREF@+V+Comp+Act1:		#;
 
 ! Actor Trigger II 
 @R.PREF.nag@+V+Comp+Act2:		#;
@@ -176,10 +268,10 @@ LEXICON VConjReg
 @R.PREF.nang@+V+Comp+Act4:		#;
 
 ! Locative Trigger
-+V+Comp+Loc:%>an		#;
+@D.PREF@+V+Comp+Loc:%>an		#;
 
 ! Benefactive Trigger
-@R.PREF.i@+V+Comp+Ben:			#;
+@R.PREF.i@@R.INFX.in@+V+Comp+Ben:			#;
 
 ! Instrument Trigger
 @R.PREF.ipinaN@+V+Comp+Ins:			#;
@@ -192,17 +284,17 @@ LEXICON VConjReg
 !-------------!
 
 ! Obj trigger I
-+V+Imp+Obj1:		#;
-+V+Imp+Obj1:%>a		#;
+@D.PREF@+V+Imp+Obj1:		#;
+@D.PREF@+V+Imp+Obj1:%>a		#;
 
 ! Obj Trigger II
-+V+Imp+Obj2:%>an	#;  ! Imperative, Object focus #2
+@D.PREF@+V+Imp+Obj2:%>an	#; 
 
 ! Obj Trigger III
-+V+Imp+Obj3:%>i		#;  ! Imperative, Object focus #3
+@D.PREF@+V+Imp+Obj3:%>i		#;
 
 ! Actor Trigger I
-+V+Imp+Act1:		#;
+@D.PREF@+V+Imp+Act1:		#;
 
 ! Actor Trigger II 
 @R.PREF.pag@+V+Imp+Act2:		#;

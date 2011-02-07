@@ -4,9 +4,9 @@ Alphabet
 
   E:a E:i E:o E:u E:e
   R:p R:b R:t R:k
-
+  N:m N:n
   @P.ACT3.ON@  @P.ACT1.ON@
-  %+:0 %>:0 %^UM:0 %^INF:0 %^IN:0 ;
+  %+:0 %>:0 %^UM:0 %^INF:0 %^IN:0 %^FILL:0 ;
 
 Sets
 
@@ -26,7 +26,7 @@ i:h <=> _ %>:0 i ;
 ! man>bili --> mambili
 
 "Nasal assimilation"
-n:m <=> _ %>:0 b: ; 
+N:m <=> _ %>:0 b: ; 
 
 !€ man%>bili
 !€ mam0bili
@@ -46,6 +46,8 @@ b:0 <=> :m %>:0 _ ;
 "Infixation of -in-"
 %^IN:0 <=> #:0 R 0:i 0:n E+ _ ;
 
+"Test to fill in RE"
+%^FILL:0 <=> #:0 R E+ _ ;
 
 !	7. X:0 <=> ___ +:0 C:C 0:u 0:m V:V
 	
