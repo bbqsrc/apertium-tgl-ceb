@@ -1,21 +1,21 @@
 Alphabet 
 
-  p t k a e i o u m n h b
+  %+:0 p t k b a e i o u m n h b
 
   E:a E:i E:o E:u E:e
   R:p R:b R:t R:k
 
   @P.ACT3.ON@  @P.ACT1.ON@
-  %+:0 %>:0 %^UM:0 ;
+  %+:0 %>:0 %^UM:0 %^INF:0 %^IN:0 ;
 
 Sets
 
   Cons = p t k b ; 
   Vow = a e i o u ;
   Nas = m n ;
+  Segm = Cons Vow Nas ;
 
 Rules
-
 ! bili>in --> bilhin
 "Replace final i with h before suffixes beginning with i" 
 i:h <=> _ %>:0 i ;
@@ -39,18 +39,29 @@ b:0 <=> :m %>:0 _ ;
 !€ mam%>bili
 !€ mam00ili
 
+"Infixation of -um-"
+%^INF:0 <=> #:0 Cons 0:u 0:m Segm+ _ ;
 
+! ibibili
+"Infixation of -in-"
+%^IN:0 <=> #:0 R 0:i 0:n E+ _ ;
+
+
+!	7. X:0 <=> ___ +:0 C:C 0:u 0:m V:V
 	
 ! %^UM>bili --> bumili
-!"Infix insertion"
-!%^UM:0 <=> %>:0 _ @P.ACT1.ON@ ; 
+"Infix insertion"
+%^UM:0 <=> %>:0 _ @P.ACT1.ON@ ; 
 
 !€ %^UM%>bili
 !€ 00bumili
 
-!"R realisation as Consonant"
-!R:CC <=> _ E: %+: CC ; where CC in Cons ;
 
-!"E realisation as Vowel"
-!E:VV <=> _ %+: (Cons:) VV ; where VV in Vow ;
+"R realisation as Consonant"
+R:CC <=> _ E: %+: CC ; 
+	where CC in Cons ;
+
+"E realisation as Vowel"
+E:VV <=> _ %+: (Cons:) VV ; 
+	where VV in Vow ;
 
