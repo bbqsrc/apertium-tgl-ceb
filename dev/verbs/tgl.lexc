@@ -1,34 +1,38 @@
-Multichar_Symbols  +V +Inf +Fut +Prog +Pret +Imp Imp+ 
-                   +Act1 +Act2 +Act3 +Act4 +Obj1 +Obj2
-                   +Obj3 +Loc +Ben +Ins +Rea +Dir +Recip
-				   +Comp
+Multichar_Symbols  +V +Inf +Cont +Prog +Comp +Imp
+				   +Obj1 +Obj2 +Obj3 
+                   +Act1 +Act2 +Act3 +Act4 
+				   +Loc +Ben +Ins +Rea 
+				   +Dir +Recip ! unused at the moment
                    +INF ! this for testing
 
-                   @P.ACT3.ON@  @P.ACT1.ON@  @P.LOCPRO.ON@
-				   @R.ACT3.ON@  @R.ACT1.ON@
-				   @P.ACT3.OFF@ @P.ACT1.OFF@  
 				   @P.PREF.pang@ @R.PREF.pang@
 				   @P.PREF.pag@ @R.PREF.pag@
 				   @P.PREF.i@ @R.PREF.i@
-					@P.COMPRO.ON@ @R.COMPRO.ON@
                    %> %^UM %^INF %^IN
+
+! Possible optimisations:
+!
+! * Separate verb situations into LEXICONs
+
 LEXICON Root
 
-Prefixes ; 
-!Stems ; ! empty entry
+Prefixes ;
+Infixes ;
+Stems ; ! empty entry
 
 
 LEXICON Prefixes
-
-i@P.PREF.i@+:i%>					Stems ;
-pang@P.PREF.pang@+:pang%>		Stems ;
-pag@P.PREF.pag@+:pag%>			Stems ;
-@P.ACT3.ON@:man%> 				Stems ;
-R%^INFE+@P.LOCPRO.ON@:R%^INFE%>	Stems ;
-iR%^INE+@P.OBJPRO.ON@:iR%^INE%> Stems ; 
-R%^INE+@P.COMPRO.ON@:R%^INE%> Stems ; 
+@P.PREF.i@:i%>					Stems ;
+@P.PREF.pang@:pang%>			Stems ;
+@P.PREF.pag@:pag%>				Stems ;
+!@P.ACT3.ON@:man%> 				Stems ;
 RE+           					Stems ;
-              					Stems ;
+
+LEXICON Infixes
+@P.OBJPRO.ON@:iR%^INE%> Stems ; 
+@P.LOCPRO.ON@:R%^INFE%>	Stems ;
+@P.COMPRO.ON@:R%^INE%>	Stems ; 
+
 
 LEXICON Stems
 bili           VConjReg ; ! "buy" 
@@ -37,30 +41,174 @@ palit          VConjReg ; ! "revise (change)"
 
 LEXICON VConjReg
 
-@R.ACT3.ON@+V+Inf+Act3: # ;
-@R.ACT1.ON@+V+Inf+Act1: # ;
-+V+Inf:@P.ACT3.OFF@              #;  ! Infinitive
-+V+Inf:@P.ACT1.OFF@              #;  ! Infinitive
-+V+Inf+Obj1:%>in     #;  ! Infinitive, Object focus #1
-+V+Inf+Obj3:%>an     #;  ! Infinitive, Object focus #2
-+V+Inf+Loc:%>an      #;  ! Infinitive, Locative focus
- 
-+V+Imp+Obj1:@R.ACT3.OFF@         #;  ! Imperative, Object focus #1
-+V+Imp+Obj1:@R.ACT1.OFF@         #;  ! Imperative, Object focus #1
-+V+Imp+Obj1:%>a      #;  ! Imperative, Object focus #1
-+V+Imp+Obj2:%>an     #;  ! Imperative, Object focus #2
-+V+Imp+Obj3:%>i      #;  ! Imperative, Object focus #3
+!-------------!
+! Infinitives !
+!-------------!
+! Obj trigger I
++V+Inf+Obj1:%>in	#; 
 
-+V+Loc+Prog:%>an # ; 
+! Obj Trigger II
+@R.PREF.i@+V+Inf+Obj2:		#;
 
-@R.PREF.pag@+V+Imp+Act2:	# ; ! Imperative, Actor Trigger II
-@R.PREF.pang@+V+Imp+Act4:	# ; ! Imperative, Actor Trigger IV
-@R.PREF.i@+V+Comp+Obj2: 	# ; ! Completed, Obj Trigger II
+! Obj Trigger III
++V+Inf+Obj3:%>an	#; 
 
-@R.COMPRO.ON@+V+Comp+Obj1: # ;
-@R.COMPRO.ON@+V+Comp+Obj3:%>an # ; 
+! Actor Trigger I
++V+Inf+Act1:		#;
 
-+V+INF:%^INF # ;
+! Actor Trigger II 
+@R.PREF.mag@+V+Inf+Act2:		#;
+
+! Actor Trigger III
+@R.PREF.ma@+V+Inf+Act3:		#;
+
+! Actor Trigger IV
+@R.PREF.mang@+V+Inf+Act4:		#;
+
+! Locative Trigger
++V+Inf+Loc:%>an		#;
+
+! Benefactive Trigger
+@R.PREF.i@+V+Inf+Ben:			#;
+
+! Instrument Trigger
+@R.PREF.ipaN@+V+Inf+Ins:			#;
+
+! Reason Trigger
+@R.PREF.ika@+V+Inf+Rea:			#;
+
+!---------------!
+! Contemplative !
+!---------------!
+! Obj trigger I
+@R.PREF.CV@+V+Cont+Obj1:%>in	#;  
+
+! Obj Trigger II
+@R.PREF.iCV@+V+Cont+Obj2:		#;
+
+! Obj Trigger III
+@R.PREF.CV@+V+Cont+Obj3:%>an	#; 
+
+! Actor Trigger I
+@R.PREF.CV@+V+Cont+Act1:		#;
+
+! Actor Trigger II 
+! TODO: check you don't need to use magCV and mag variables
+@R.PREF.magCV@+V+Cont+Act2:		#;
+
+! Actor Trigger III
+@R.PREF.maCV@+V+Cont+Act3:		#;
+
+! Actor Trigger IV
+@R.PREF.mangCV@+V+Cont+Act4:		#;
+
+! Locative Trigger
+@R.PREF.CV@+V+Cont+Loc:%>an		#;
+
+! Benefactive Trigger
+@R.PREF.iCV@+V+Cont+Ben:			#;
+
+! Instrument Trigger
+@R.PREF.ipaNCV@+V+Cont+Ins:			#;
+
+! Reason Trigger
+@R.PREF.ikaCV@+V+Cont+Rea:			#;
+
+!-------------!
+! Progressive !
+!-------------!
+! Obj trigger I
+@R.PREF.CinV@+V+Prog+Obj1:		#;  
+
+! Obj Trigger II
+@R.PREF.iCinV@+V+Prog+Obj2:		#;
+
+! Obj Trigger III
+@R.PREF.CinV@+V+Prog+Obj3:%>an	#; 
+
+! Actor Trigger I
+@R.PREF.CumV@+V+Prog+Act1:		#;
+
+! Actor Trigger II 
+@R.PREF.nagCV@+V+Prog+Act2:		#;
+
+! Actor Trigger III
+@R.PREF.naCV@+V+Prog+Act3:		#;
+
+! Actor Trigger IV
+@R.PREF.nangCV@+V+Prog+Act4:		#;
+
+! Locative Trigger
+@R.PREF.CinV@+V+Prog+Loc:%>an		#;
+
+! Benefactive Trigger
+@R.PREF.iCinV@+V+Prog+Ben:			#;
+
+! Instrument Trigger
+@R.PREF.ipinaNCV@+V+Prog+Ins:			#;
+
+! Reason Trigger
+@R.PREF.ikinaCV@+V+Prog+Rea:			#;
+
+
+!-------------!
+! Completed   !
+!-------------!
+! Obj trigger I
++V+Comp+Obj1:		#;  
+
+! Obj Trigger II
+@R.PREF.i@+V+Comp+Obj2:		#;
+
+! Obj Trigger III
++V+Comp+Obj3:%>an	#; 
+
+! Actor Trigger I
++V+Comp+Act1:		#;
+
+! Actor Trigger II 
+@R.PREF.nag@+V+Comp+Act2:		#;
+
+! Actor Trigger III
+@R.PREF.na@+V+Comp+Act3:		#;
+
+! Actor Trigger IV
+@R.PREF.nang@+V+Comp+Act4:		#;
+
+! Locative Trigger
++V+Comp+Loc:%>an		#;
+
+! Benefactive Trigger
+@R.PREF.i@+V+Comp+Ben:			#;
+
+! Instrument Trigger
+@R.PREF.ipinaN@+V+Comp+Ins:			#;
+
+! Reason Trigger
+@R.PREF.ikina@+V+Comp+Rea:			#;
+
+!-------------!
+! Imperative  !
+!-------------!
+
+! Obj trigger I
++V+Imp+Obj1:		#;
++V+Imp+Obj1:%>a		#;
+
+! Obj Trigger II
++V+Imp+Obj2:%>an	#;  ! Imperative, Object focus #2
+
+! Obj Trigger III
++V+Imp+Obj3:%>i		#;  ! Imperative, Object focus #3
+
+! Actor Trigger I
++V+Imp+Act1:		#;
+
+! Actor Trigger II 
+@R.PREF.pag@+V+Imp+Act2:		#;
+
+! Actor Trigger IV
+@R.PREF.pang@+V+Imp+Act4:		#;
 
 END
 
