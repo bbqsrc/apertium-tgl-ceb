@@ -5,8 +5,7 @@ Alphabet
   E:a E:i E:o E:u E:e
   R:p R:b R:t R:k R:l 
   N:m N:n
-  @P.ACT3.ON@  @P.ACT1.ON@
-  %+:0 %>:0 %^UMF:0 %^INF:0 %^IN:0 %^FILL:0 %^INDRE:0 ;
+  %+:0 %>:0 %^UM:0 %^INF:0 %^IN:0 %^FILL:0 %^INDRE:0 U:0;
 
 Sets
 
@@ -17,34 +16,37 @@ Sets
 
 Rules
 ! bili>in --> bilhin
-"Replace final i with h before suffixes beginning with i" 
-i:h <=> _ %>:0 i ;
+!!"Replace final i with h before suffixes beginning with i" 
+!!i:h <=> _ %>:0 i ;
 
 !€ bili%>in
 !€ bilh0in
 
 ! man>bili --> mambili
 
-"Nasal assimilation"
-n:m <=> _ %>:0 b: ; 
+!!"Nasal assimilation"
+!!n:m <=> _ %>:0 b: ; 
 
 !€ man%>bili
 !€ mam0bili
 
 ! mambili --> mamili
 
-"Nasal deletion"
-b:0 <=> :m %>:0 _ ;
+!!"Nasal deletion"
+!!b:0 <=> :m %>:0 _ ;
 
 !€ mam%>bili
 !€ mam00ili
+
+"Infix -um-"
+U:0 => _ %+:0 R:R 0:u 0:m E:E ; 
 
 !"Infixation of -um-"
 !%^INF:0 <=> #:0 Cons 0:u 0:m Segm+ _ ;
 
 ! ibibili
-!"Infixation of -in-"
-!%^IN:0 <=> #:0 R 0:i 0:n E+ _ ;
+!!"Infixation of -in-"
+!!%^IN:0 <=> #:0 R 0:i 0:n E+ _ ;
 
 !"Test to fill in RE"
 !%^FILL:0 <=> #:0 R E+ _ ;

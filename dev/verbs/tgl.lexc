@@ -5,7 +5,7 @@ Multichar_Symbols  +V +Inf +Cont +Prog +Comp +Imp
 				   +Dir +Recip ! unused at the moment
                    +INF ! this for testing
 
-                   %> %^UMF %^INF %^IN %^FILL %^INDRE
+                   %> %^UM %^INF %^IN %^FILL %^INDRE
 
                    @D.PREF@ @C.PREF@
 				   @D.INFX@ @C.INFX@
@@ -81,11 +81,11 @@ Multichar_Symbols  +V +Inf +Cont +Prog +Comp +Imp
 LEXICON Root
 
 Infixes ;
-Prefixes ;
-PrefixesRegex ;
+!Prefixes ;
+!PrefixesRegex ;
 !@C.PREF@@C.INFX@
 !@C.PREF@@C.INFX@
-Stems ; ! empty entry
+!Stems ; ! empty entry
 
 
 LEXICON Prefixes
@@ -123,15 +123,17 @@ LEXICON PrefixesRegex
 
 LEXICON Infixes
 !@P.INFX.ON@
-:iR%^INE%> Stems ; 
+!:iR%^INE%> Stems ; 
 !@P.INFX.ON@
-:R%^INFE%>	Stems ;
+!:R%^INFE%>	Stems ;
 !@P.INFX.ON@
-:R%^INE%>	Stems ; 
+!:R%^INE%>	Stems ; 
 
-@P.INFX.um@@C.PREF@i:R%^UMFE%>			Stems ;
-@P.INFX.i-in@i-in:iREin%>			Stems ;
-@P.INFX.in@in:R%^INE+%>			Stems ;
+!@P.INFX.um@:
+U%>RE+		Stems ;
+!@P.INFX.i-in@i-in:iREin%>			Stems ;
+!@P.INFX.in@in:R%^INE+%>			Stems ;
+!	Stems ;
 
 LEXICON Stems
 bili           RegSuffixes ; ! "buy" 
