@@ -3,16 +3,16 @@ Alphabet
   %+:0 b c d f g h j k l m n p q r s t v w x y z a e i o u
 
   !E:a E:i E:o E:u E:e
-  !R:p R:b R:t R:k R:l 
+  !R:p R:b R:t R:k R:l R:h R:s
   N:m N:n
   E:0 R:0 N:0
   X:0 Y:0 S:0 F:0
 
-  %+:0 %>:0 %^UM:0 %^INF:0 %^IN:0 %^FILL:0 %^INDRE:0 U:0;
+  %+:0 %>:0;
 
 Sets
 
-  Cons = p t k b ; 
+  Cons = b c d f g h j k l m n p q r s t v w x y z ; 
   Vow = a e i o u ;
   Nas = m n ;
   Segm = Cons Vow Nas ;

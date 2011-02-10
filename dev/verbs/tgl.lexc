@@ -118,7 +118,415 @@ LEXICON Infixes
 LEXICON PartStems 
 @R.ALPH.b@ili	RegSuffixes ;
 @R.ALPH.l@inis	RegSuffixes ;
-
+@R.ALPH.p@ili	RegSuffixes ;
+@R.ALPH.t@ahi	RegSuffixes ;
+@R.ALPH.k@uha	RegSuffixes ;
+@R.ALPH.l@iban	RegSuffixes ;
+@R.ALPH.a@buso	RegSuffixes ;
+@R.ALPH.t@anggap	RegSuffixes ;
+@R.ALPH.a@kusa	RegSuffixes ;
+@R.ALPH.k@uha	RegSuffixes ;
+@R.ALPH.a@rte	RegSuffixes ;
+@R.ALPH.d@agdag	RegSuffixes ;
+@R.ALPH.s@ulong	RegSuffixes ;
+@R.ALPH.g@alit	RegSuffixes ;
+@R.ALPH.g@alit	RegSuffixes ;
+@R.ALPH.g@alit	RegSuffixes ;
+@R.ALPH.i@nis	RegSuffixes ;
+@R.ALPH.s@agot	RegSuffixes ;
+@R.ALPH.l@apit	RegSuffixes ;
+@R.ALPH.d@ating	RegSuffixes ;
+@R.ALPH.h@ingí'	RegSuffixes ;
+@R.ALPH.t@anong	RegSuffixes ;
+@R.ALPH.a@kala	RegSuffixes ;
+@R.ALPH.l@usob	RegSuffixes ;
+@R.ALPH.k@amit	RegSuffixes ;
+@R.ALPH.d@alo	RegSuffixes ;
+@R.ALPH.p@ansin	RegSuffixes ;
+@R.ALPH.a@kit	RegSuffixes ;
+@R.ALPH.l@ayó'	RegSuffixes ;
+@R.ALPH.l@ayó'	RegSuffixes ;
+@R.ALPH.s@amá'	RegSuffixes ;
+@R.ALPH.b@awal	RegSuffixes ;
+@R.ALPH.t@ahol	RegSuffixes ;
+@R.ALPH.u@mpisa	RegSuffixes ;
+@R.ALPH.n@iwala	RegSuffixes ;
+@R.ALPH.l@aki	RegSuffixes ;
+@R.ALPH.a@nak	RegSuffixes ;
+@R.ALPH.k@agat	RegSuffixes ;
+@R.ALPH.l@aga	RegSuffixes ;
+@R.ALPH.h@iram	RegSuffixes ;
+@R.ALPH.u@tang	RegSuffixes ;
+@R.ALPH.y@abang	RegSuffixes ;
+@R.ALPH.s@irá'	RegSuffixes ;
+@R.ALPH.b@asag	RegSuffixes ;
+@R.ALPH.p@unit	RegSuffixes ;
+@R.ALPH.b@alí'	RegSuffixes ;
+@R.ALPH.s@irá'	RegSuffixes ;
+@R.ALPH.w@asak	RegSuffixes ;
+@R.ALPH.h@inga	RegSuffixes ;
+@R.ALPH.d@ala	RegSuffixes ;
+@R.ALPH.h@atid	RegSuffixes ;
+@R.ALPH.s@áma	RegSuffixes ;
+@R.ALPH.b@alik	RegSuffixes ;
+@R.ALPH.u@wí'	RegSuffixes ;
+@R.ALPH.l@abas	RegSuffixes ;
+@R.ALPH.b@uhay	RegSuffixes ;
+@R.ALPH.a@kyat	RegSuffixes ;
+@R.ALPH.s@ipilyo	RegSuffixes ;
+@R.ALPH.s@uklay	RegSuffixes ;
+@R.ALPH.t@ayó'	RegSuffixes ;
+@R.ALPH.s@unog	RegSuffixes ;
+@R.ALPH.d@ighay	RegSuffixes ;
+@R.ALPH.t@awag	RegSuffixes ;
+@R.ALPH.t@awag	RegSuffixes ;
+@R.ALPH.d@ala	RegSuffixes ;
+@R.ALPH.s@unong	RegSuffixes ;
+@R.ALPH.p@asan	RegSuffixes ;
+@R.ALPH.b@itbit	RegSuffixes ;
+@R.ALPH.k@ipkip	RegSuffixes ;
+@R.ALPH.s@aló	RegSuffixes ;
+@R.ALPH.h@uli	RegSuffixes ;
+@R.ALPH.a@bot	RegSuffixes ;
+@R.ALPH.p@alit	RegSuffixes ;
+@R.ALPH.b@ihis	RegSuffixes ;
+@R.ALPH.d@aya'	RegSuffixes ;
+@R.ALPH.p@ili'	RegSuffixes ;
+@R.ALPH.p@alakpak	RegSuffixes ;
+@R.ALPH.l@inis	RegSuffixes ;
+@R.ALPH.l@inis	RegSuffixes ;
+@R.ALPH.a@kyat	RegSuffixes ;
+@R.ALPH.s@ará	RegSuffixes ;
+@R.ALPH.i@pon	RegSuffixes ;
+@R.ALPH.p@unta	RegSuffixes ;
+@R.ALPH.b@alik	RegSuffixes ;
+@R.ALPH.g@aling	RegSuffixes ;
+@R.ALPH.l@íto	RegSuffixes ;
+@R.ALPH.p@atuloy	RegSuffixes ;
+@R.ALPH.u@sap	RegSuffixes ;
+@R.ALPH.l@utó'	RegSuffixes ;
+@R.ALPH.k@opya	RegSuffixes ;
+@R.ALPH.b@ilang	RegSuffixes ;
+@R.ALPH.l@igaw	RegSuffixes ;
+@R.ALPH.t@akip	RegSuffixes ;
+@R.ALPH.t@akip	RegSuffixes ;
+@R.ALPH.g@awá'	RegSuffixes ;
+@R.ALPH.t@awid	RegSuffixes ;
+@R.ALPH.i@yak	RegSuffixes ;
+@R.ALPH.g@amot	RegSuffixes ;
+@R.ALPH.n@aggamot	RegSuffixes ;
+@R.ALPH.p@útol	RegSuffixes ;
+@R.ALPH.h@iwa'	RegSuffixes ;
+@R.ALPH.t@atad	RegSuffixes ;
+@R.ALPH.g@ayat	RegSuffixes ;
+@R.ALPH.g@upit	RegSuffixes ;
+@R.ALPH.s@ibak	RegSuffixes ;
+@R.ALPH.p@únit	RegSuffixes ;
+@R.ALPH.p@ugot	RegSuffixes ;
+@R.ALPH.t@anggal	RegSuffixes ;
+@R.ALPH.s@irá'	RegSuffixes ;
+@R.ALPH.s@ayaw	RegSuffixes ;
+@R.ALPH.n@agsasayaw	RegSuffixes ;
+@R.ALPH.l@inlang	RegSuffixes ;
+@R.ALPH.d@alá	RegSuffixes ;
+@R.ALPH.a@lís	RegSuffixes ;
+@R.ALPH.s@irá'	RegSuffixes ;
+@R.ALPH.s@irá'	RegSuffixes ;
+@R.ALPH.u@nlad	RegSuffixes ;
+@R.ALPH.p@atay	RegSuffixes ;
+@R.ALPH.h@atí'	RegSuffixes ;
+@R.ALPH.h@ílo	RegSuffixes ;
+@R.ALPH.g@áwa'	RegSuffixes ;
+@R.ALPH.g@uhit	RegSuffixes ;
+@R.ALPH.b@ihis	RegSuffixes ;
+@R.ALPH.h@ubad	RegSuffixes ;
+@R.ALPH.i@nom	RegSuffixes ;
+@R.ALPH.m@aneho	RegSuffixes ;
+@R.ALPH.h@ulog	RegSuffixes ;
+@R.ALPH.b@agsak	RegSuffixes ;
+@R.ALPH.b@ába'	RegSuffixes ;
+@R.ALPH.h@atíd	RegSuffixes ;
+@R.ALPH.k@ain	RegSuffixes ;
+@R.ALPH.t@áas	RegSuffixes ;
+@R.ALPH.t@anan	RegSuffixes ;
+@R.ALPH.y@akap	RegSuffixes ;
+@R.ALPH.s@ayá	RegSuffixes ;
+@R.ALPH.p@asok	RegSuffixes ;
+@R.ALPH.s@uót	RegSuffixes ;
+@R.ALPH.l@ibang	RegSuffixes ;
+@R.ALPH.b@urá	RegSuffixes ;
+@R.ALPH.s@urí'	RegSuffixes ;
+@R.ALPH.t@ingín	RegSuffixes ;
+@R.ALPH.s@ulit	RegSuffixes ;
+@R.ALPH.l@ábas	RegSuffixes ;
+@R.ALPH.h@árap	RegSuffixes ;
+@R.ALPH.h@ulog	RegSuffixes ;
+@R.ALPH.s@aká	RegSuffixes ;
+@R.ALPH.k@ain	RegSuffixes ;
+@R.ALPH.d@amdám	RegSuffixes ;
+@R.ALPH.d@ama	RegSuffixes ;
+@R.ALPH.g@áling	RegSuffixes ;
+@R.ALPH.l@aban	RegSuffixes ;
+@R.ALPH.p@unó'	RegSuffixes ;
+@R.ALPH.h@anap	RegSuffixes ;
+@R.ALPH.i@sdá'	RegSuffixes ;
+@R.ALPH.l@ípad	RegSuffixes ;
+@R.ALPH.s@únod	RegSuffixes ;
+@R.ALPH.l@imot	RegSuffixes ;
+@R.ALPH.l@imot	RegSuffixes ;
+@R.ALPH.t@ákot	RegSuffixes ;
+@R.ALPH.b@úsog	RegSuffixes ;
+@R.ALPH.p@úno'	RegSuffixes ;
+@R.ALPH.s@ugal	RegSuffixes ;
+@R.ALPH.k@uhá'	RegSuffixes ;
+@R.ALPH.r@egalo	RegSuffixes ;
+@R.ALPH.b@igay	RegSuffixes ;
+@R.ALPH.s@ukó'	RegSuffixes ;
+@R.ALPH.p@untá	RegSuffixes ;
+@R.ALPH.l@ayas	RegSuffixes ;
+@R.ALPH.b@abá'	RegSuffixes ;
+@R.ALPH.t@uloy	RegSuffixes ;
+@R.ALPH.l@abas	RegSuffixes ;
+@R.ALPH.a@kyat	RegSuffixes ;
+@R.ALPH.p@aalam	RegSuffixes ;
+@R.ALPH.t@ápos	RegSuffixes ;
+@R.ALPH.b@igay	RegSuffixes ;
+@R.ALPH.b@ati'	RegSuffixes ;
+@R.ALPH.l@aki	RegSuffixes ;
+@R.ALPH.b@antay	RegSuffixes ;
+@R.ALPH.g@upit	RegSuffixes ;
+@R.ALPH.k@amay	RegSuffixes ;
+@R.ALPH.k@amay	RegSuffixes ;
+@R.ALPH.s@ampay	RegSuffixes ;
+@R.ALPH.s@ayá	RegSuffixes ;
+@R.ALPH.s@ayá	RegSuffixes ;
+@R.ALPH.s@uklam	RegSuffixes ;
+@R.ALPH.g@áling	RegSuffixes ;
+@R.ALPH.d@ínig	RegSuffixes ;
+@R.ALPH.k@inig	RegSuffixes ;
+@R.ALPH.i@nit	RegSuffixes ;
+@R.ALPH.k@umusta	RegSuffixes ;
+@R.ALPH.t@ulong	RegSuffixes ;
+@R.ALPH.t@ago'	RegSuffixes ;
+@R.ALPH.t@ago'	RegSuffixes ;
+@R.ALPH.l@akad	RegSuffixes ;
+@R.ALPH.s@untok	RegSuffixes ;
+@R.ALPH.p@ukpok	RegSuffixes ;
+@R.ALPH.t@ira	RegSuffixes ;
+@R.ALPH.h@awak	RegSuffixes ;
+@R.ALPH.y@akap	RegSuffixes ;
+@R.ALPH.d@ali'	RegSuffixes ;
+@R.ALPH.s@ákit	RegSuffixes ;
+@R.ALPH.s@ákit	RegSuffixes ;
+@R.ALPH.s@ákit	RegSuffixes ;
+@R.ALPH.b@uti	RegSuffixes ;
+@R.ALPH.s@uot	RegSuffixes ;
+@R.ALPH.l@agay	RegSuffixes ;
+@R.ALPH.k@ilala	RegSuffixes ;
+@R.ALPH.k@ita	RegSuffixes ;
+@R.ALPH.i@mbento	RegSuffixes ;
+@R.ALPH.i@mbita	RegSuffixes ;
+@R.ALPH.s@ali	RegSuffixes ;
+@R.ALPH.s@ali	RegSuffixes ;
+@R.ALPH.s@ama	RegSuffixes ;
+@R.ALPH.l@oko	RegSuffixes ;
+@R.ALPH.t@alon	RegSuffixes ;
+@R.ALPH.t@ago'	RegSuffixes ;
+@R.ALPH.t@abí	RegSuffixes ;
+@R.ALPH.p@átay	RegSuffixes ;
+@R.ALPH.k@atay	RegSuffixes ;
+@R.ALPH.h@álik	RegSuffixes ;
+@R.ALPH.k@átok	RegSuffixes ;
+@R.ALPH.g@ibá'	RegSuffixes ;
+@R.ALPH.k@ilala	RegSuffixes ;
+@R.ALPH.t@awa	RegSuffixes ;
+@R.ALPH.l@abá	RegSuffixes ;
+@R.ALPH.l@ágay	RegSuffixes ;
+@R.ALPH.s@inungaling	RegSuffixes ;
+@R.ALPH.h@iga'	RegSuffixes ;
+@R.ALPH.i@law	RegSuffixes ;
+@R.ALPH.k@inig	RegSuffixes ;
+@R.ALPH.u@tang	RegSuffixes ;
+@R.ALPH.t@ingin	RegSuffixes ;
+@R.ALPH.w@alá'	RegSuffixes ;
+@R.ALPH.i@big	RegSuffixes ;
+@R.ALPH.m@ahal	RegSuffixes ;
+@R.ALPH.g@áwa'	RegSuffixes ;
+@R.ALPH.p@alengke	RegSuffixes ;
+@R.ALPH.k@asal	RegSuffixes ;
+@R.ALPH.t@imbang	RegSuffixes ;
+@R.ALPH.s@ukat	RegSuffixes ;
+@R.ALPH.k@íta	RegSuffixes ;
+@R.ALPH.l@ipat	RegSuffixes ;
+@R.ALPH.l@ipat	RegSuffixes ;
+@R.ALPH.u@sog	RegSuffixes ;
+@R.ALPH.u@sog	RegSuffixes ;
+@R.ALPH.s@iesta	RegSuffixes ;
+@R.ALPH.n@agpahinga	RegSuffixes ;
+@R.ALPH.k@ailangan	RegSuffixes ;
+@R.ALPH.h@indí'	RegSuffixes ;
+@R.ALPH.t@ángo'	RegSuffixes ;
+@R.ALPH.i@ngay	RegSuffixes ;
+@R.ALPH.i@ngay	RegSuffixes ;
+@R.ALPH.s@únod	RegSuffixes ;
+@R.ALPH.m@ásid	RegSuffixes ;
+@R.ALPH.o@kupá	RegSuffixes ;
+@R.ALPH.y@ari'	RegSuffixes ;
+@R.ALPH.b@úkas	RegSuffixes ;
+@R.ALPH.b@úkas	RegSuffixes ;
+@R.ALPH.u@tos	RegSuffixes ;
+@R.ALPH.o@rder	RegSuffixes ;
+@R.ALPH.p@inta	RegSuffixes ;
+@R.ALPH.p@inta	RegSuffixes ;
+@R.ALPH.g@arahe	RegSuffixes ;
+@R.ALPH.p@arada	RegSuffixes ;
+@R.ALPH.p@asa	RegSuffixes ;
+@R.ALPH.d@aan	RegSuffixes ;
+@R.ALPH.p@asa	RegSuffixes ;
+@R.ALPH.s@anlá'	RegSuffixes ;
+@R.ALPH.b@ayad	RegSuffixes ;
+@R.ALPH.s@ilip	RegSuffixes ;
+@R.ALPH.p@ili'	RegSuffixes ;
+@R.ALPH.d@ampot	RegSuffixes ;
+@R.ALPH.s@undó'	RegSuffixes ;
+@R.ALPH.l@agay	RegSuffixes ;
+@R.ALPH.t@anim	RegSuffixes ;
+@R.ALPH.l@aró'	RegSuffixes ;
+@R.ALPH.t@ugtog	RegSuffixes ;
+@R.ALPH.p@angako'	RegSuffixes ;
+@R.ALPH.t@uro'	RegSuffixes ;
+@R.ALPH.b@uhos	RegSuffixes ;
+@R.ALPH.s@imangot	RegSuffixes ;
+@R.ALPH.d@asal	RegSuffixes ;
+@R.ALPH.h@andá'	RegSuffixes ;
+@R.ALPH.h@andá'	RegSuffixes ;
+@R.ALPH.p@lantsa	RegSuffixes ;
+@R.ALPH.g@anda	RegSuffixes ;
+@R.ALPH.g@anda	RegSuffixes ;
+@R.ALPH.p@igil	RegSuffixes ;
+@R.ALPH.p@romote	RegSuffixes ;
+@R.ALPH.t@aguyod	RegSuffixes ;
+@R.ALPH.h@ila	RegSuffixes ;
+@R.ALPH.t@ulak	RegSuffixes ;
+@R.ALPH.l@agay	RegSuffixes ;
+@R.ALPH.p@asok	RegSuffixes ;
+@R.ALPH.s@ubo'	RegSuffixes ;
+@R.ALPH.b@ukas	RegSuffixes ;
+@R.ALPH.s@uot	RegSuffixes ;
+@R.ALPH.a@lis	RegSuffixes ;
+@R.ALPH.b@ába'	RegSuffixes ;
+@R.ALPH.t@anong	RegSuffixes ;
+@R.ALPH.b@ilis	RegSuffixes ;
+@R.ALPH.t@ahimik	RegSuffixes ;
+@R.ALPH.a@yaw	RegSuffixes ;
+@R.ALPH.a@rúga'	RegSuffixes ;
+@R.ALPH.a@laga	RegSuffixes ;
+@R.ALPH.l@aki	RegSuffixes ;
+@R.ALPH.t@aas	RegSuffixes ;
+@R.ALPH.a@bot	RegSuffixes ;
+@R.ALPH.d@atingrating	RegSuffixes ;
+@R.ALPH.b@asa	RegSuffixes ;
+@R.ALPH.t@anggap	RegSuffixes ;
+@R.ALPH.a@yaw	RegSuffixes ;
+@R.ALPH.t@anggi	RegSuffixes ;
+@R.ALPH.a@lala	RegSuffixes ;
+@R.ALPH.h@ubad	RegSuffixes ;
+@R.ALPH.a@lis	RegSuffixes ;
+@R.ALPH.a@lis	RegSuffixes ;
+@R.ALPH.u@pa	RegSuffixes ;
+@R.ALPH.a@rkila	RegSuffixes ;
+@R.ALPH.r@enta	RegSuffixes ;
+@R.ALPH.u@lit	RegSuffixes ;
+@R.ALPH.u@lit	RegSuffixes ;
+@R.ALPH.u@lat	RegSuffixes ;
+@R.ALPH.b@alita	RegSuffixes ;
+@R.ALPH.s@umbong	RegSuffixes ;
+@R.ALPH.s@auli'	RegSuffixes ;
+@R.ALPH.p@alit	RegSuffixes ;
+@R.ALPH.u@lit	RegSuffixes ;
+@R.ALPH.s@akay	RegSuffixes ;
+@R.ALPH.t@áyo'	RegSuffixes ;
+@R.ALPH.b@angon	RegSuffixes ;
+@R.ALPH.n@akaw	RegSuffixes ;
+@R.ALPH.g@ulong	RegSuffixes ;
+@R.ALPH.k@usot	RegSuffixes ;
+@R.ALPH.h@agod	RegSuffixes ;
+@R.ALPH.m@asahe	RegSuffixes ;
+@R.ALPH.t@akbo	RegSuffixes ;
+@R.ALPH.l@ungkot	RegSuffixes ;
+@R.ALPH.s@abi	RegSuffixes ;
+@R.ALPH.t@akot	RegSuffixes ;
+@R.ALPH.k@ita	RegSuffixes ;
+@R.ALPH.b@enta	RegSuffixes ;
+@R.ALPH.t@ahi'	RegSuffixes ;
+@R.ALPH.s@igaw	RegSuffixes ;
+@R.ALPH.s@igaw	RegSuffixes ;
+@R.ALPH.p@irma	RegSuffixes ;
+@R.ALPH.s@enyas	RegSuffixes ;
+@R.ALPH.a@wit	RegSuffixes ;
+@R.ALPH.l@ubog	RegSuffixes ;
+@R.ALPH.u@po'	RegSuffixes ;
+@R.ALPH.t@ulog	RegSuffixes ;
+@R.ALPH.h@iwa'	RegSuffixes ;
+@R.ALPH.n@giti	RegSuffixes ;
+@R.ALPH.a@yos	RegSuffixes ;
+@R.ALPH.t@áyo'	RegSuffixes ;
+@R.ALPH.h@into'	RegSuffixes ;
+@R.ALPH.h@abla	RegSuffixes ;
+@R.ALPH.d@usa	RegSuffixes ;
+@R.ALPH.l@unok	RegSuffixes ;
+@R.ALPH.w@alis	RegSuffixes ;
+@R.ALPH.k@uha'	RegSuffixes ;
+@R.ALPH.i@ngat	RegSuffixes ;
+@R.ALPH.a@laga'	RegSuffixes ;
+@R.ALPH.i@ngat	RegSuffixes ;
+@R.ALPH.s@alita'	RegSuffixes ;
+@R.ALPH.t@uro'	RegSuffixes ;
+@R.ALPH.b@iro'	RegSuffixes ;
+@R.ALPH.s@abi	RegSuffixes ;
+@R.ALPH.s@uri'	RegSuffixes ;
+@R.ALPH.s@ubok	RegSuffixes ;
+@R.ALPH.h@igpit	RegSuffixes ;
+@R.ALPH.i@sip	RegSuffixes ;
+@R.ALPH.t@apon	RegSuffixes ;
+@R.ALPH.l@akbay	RegSuffixes ;
+@R.ALPH.b@akasyon	RegSuffixes ;
+@R.ALPH.p@asyal	RegSuffixes ;
+@R.ALPH.l@ipad	RegSuffixes ;
+@R.ALPH.b@ukas	RegSuffixes ;
+@R.ALPH.s@ara	RegSuffixes ;
+@R.ALPH.m@akinilya	RegSuffixes ;
+@R.ALPH.i@ntindi	RegSuffixes ;
+@R.ALPH.g@amit	RegSuffixes ;
+@R.ALPH.w@ala'	RegSuffixes ;
+@R.ALPH.s@uway	RegSuffixes ;
+@R.ALPH.l@abag	RegSuffixes ;
+@R.ALPH.d@alaw	RegSuffixes ;
+@R.ALPH.b@oto	RegSuffixes ;
+@R.ALPH.h@intay	RegSuffixes ;
+@R.ALPH.l@akad	RegSuffixes ;
+@R.ALPH.b@abala'	RegSuffixes ;
+@R.ALPH.h@ugas	RegSuffixes ;
+@R.ALPH.n@ood	RegSuffixes ;
+@R.ALPH.b@antay	RegSuffixes ;
+@R.ALPH.d@ilig	RegSuffixes ;
+@R.ALPH.k@asal	RegSuffixes ;
+@R.ALPH.b@ulong	RegSuffixes ;
+@R.ALPH.s@ipol	RegSuffixes ;
+@R.ALPH.w@agi'	RegSuffixes ;
+@R.ALPH.p@unas	RegSuffixes ;
+@R.ALPH.k@uha	RegSuffixes ;
+@R.ALPH.a@lis	RegSuffixes ;
+@R.ALPH.t@aka	RegSuffixes ;
+@R.ALPH.m@angha'	RegSuffixes ;
+@R.ALPH.t@rabaho	RegSuffixes ;
+@R.ALPH.a@lala	RegSuffixes ;
+@R.ALPH.s@amba	RegSuffixes ;
+@R.ALPH.b@alot	RegSuffixes ;
+@R.ALPH.s@ulat	RegSuffixes ;
+@R.ALPH.s@ulat	RegSuffixes ;
+@R.ALPH.h@ikab	RegSuffixes ;
+@R.ALPH.o@o	RegSuffixes ;
 
 LEXICON RegSuffixes
 
@@ -296,417 +704,3 @@ LEXICON RegSuffixes
 @R.PREF.pang@@D.CV@@D.INFX@+V+Imp+Act4:		#;
 
 END
-
-pili           VConjReg ; ! "choose"
-tahi           VConjReg ; ! "sew" 
-kuha           VConjReg ; ! "take" 
-liban          VConjReg ; ! "absent"
-abuso          VConjReg ; ! "abuse"
-tanggap        VConjReg ; ! "accept"
-akusa          VConjReg ; ! "accuse"
-kuha           VConjReg ; ! "acquire"
-arte           VConjReg ; ! "act"
-dagdag         VConjReg ; ! "add"
-sulong         VConjReg ; ! "advance (forward)"
-galit          VConjReg ; ! "agitate (someone)"
-galit          VConjReg ; ! "angry (to be angry)"
-galit          VConjReg ; ! "angry (make someone)"
-inis           VConjReg ; ! "annoy"
-sagot          VConjReg ; ! "answer (respond)"
-lapit          VConjReg ; ! "approach"
-dating         VConjReg ; ! "arrive"
-hingí'         VConjReg ; ! "ask (something)"
-tanong         VConjReg ; ! "ask about"
-akala          VConjReg ; ! "assume"
-lusob          VConjReg ; ! "attack"
-kamit          VConjReg ; ! "attain"
-dalo           VConjReg ; ! "attend"
-pansin         VConjReg ; ! "attention (give)"
-akit           VConjReg ; ! "attract"
-layó'          VConjReg ; ! "avoid"
-layó'          VConjReg ; ! "avoid"
-samá'          VConjReg ; ! "bad (to become)"
-bawal          VConjReg ; ! "ban"
-tahol          VConjReg ; ! "bark"
-umpisa         VConjReg ; ! "begin"
-niwala         VConjReg ; ! "believe"
-laki           VConjReg ; ! "big (to become)"
-anak           VConjReg ; ! "birth (to be born)"
-kagat          VConjReg ; ! "bite"
-laga           VConjReg ; ! "boil"
-hiram          VConjReg ; ! "borrow"
-utang          VConjReg ; ! "borrow (money)"
-yabang         VConjReg ; ! "brag (or boast)"
-sirá'          VConjReg ; ! "break"
-basag          VConjReg ; ! "break (glassware)"
-punit          VConjReg ; ! "break (tear)"
-balí'          VConjReg ; ! "break (long objects)"
-sirá'          VConjReg ; ! "break (out of order)"
-wasak          VConjReg ; ! "break (irreparable)"
-hinga          VConjReg ; ! "breathe"
-dala           VConjReg ; ! "bring (something)"
-hatid          VConjReg ; ! "bring"
-sáma           VConjReg ; ! "bringalong"
-balik          VConjReg ; ! "bringback"
-uwí'           VConjReg ; ! "bringhome"
-labas          VConjReg ; ! "bringout"
-buhay          VConjReg ; ! "bringto life"
-akyat          VConjReg ; ! "bringup"
-sipilyo        VConjReg ; ! "brush (teeth)"
-suklay         VConjReg ; ! "brush (hair)"
-tayó'          VConjReg ; ! "build"
-sunog          VConjReg ; ! "burn"
-dighay         VConjReg ; ! "burp"
-tawag          VConjReg ; ! "call"
-tawag          VConjReg ; ! "call (phone)"
-dala           VConjReg ; ! "carry"
-sunong         VConjReg ; ! "carry (on the head)"
-pasan          VConjReg ; ! "carry (on the back)"
-bitbit         VConjReg ; ! "carry (with arm)"
-kipkip         VConjReg ; ! "carry (underarm)"
-saló           VConjReg ; ! "catch (something)"
-huli           VConjReg ; ! "catch (someone)"
-abot           VConjReg ; ! "catch (someone)"
-palit          VConjReg ; ! "change"
-bihis          VConjReg ; ! "change (clothes)"
-daya'          VConjReg ; ! "cheat"
-pili'          VConjReg ; ! "choose"
-palakpak       VConjReg ; ! "clap"
-linis          VConjReg ; ! "clean"
-linis          VConjReg ; ! "clean (become)"
-akyat          VConjReg ; ! "climb"
-sará           VConjReg ; ! "close"
-ipon           VConjReg ; ! "collect"
-punta          VConjReg ; ! "come"
-balik          VConjReg ; ! "comeback"
-galing         VConjReg ; ! "comefrom"
-líto           VConjReg ; ! "confuse"
-patuloy        VConjReg ; ! "continue"
-usap           VConjReg ; ! "converse"
-lutó'          VConjReg ; ! "cook"
-kopya          VConjReg ; ! "copy"
-bilang         VConjReg ; ! "count"
-ligaw          VConjReg ; ! "court (romance)"
-takip          VConjReg ; ! "cover"
-takip          VConjReg ; ! "coverup"
-gawá'          VConjReg ; ! "create"
-tawid          VConjReg ; ! "cross"
-iyak           VConjReg ; ! "cry"
-gamot          VConjReg ; ! "cure"
-naggamot       VConjReg ; ! "gamot"
-pútol          VConjReg ; ! "cut (break)"
-hiwa'          VConjReg ; ! "cut (slice)"
-tatad          VConjReg ; ! "cut (chop)"
-gayat          VConjReg ; ! "cut (vegetables)"
-gupit          VConjReg ; ! "cut (with scissors)"
-sibak          VConjReg ; ! "cut (with ax)"
-púnit          VConjReg ; ! "cut (tear off)"
-pugot          VConjReg ; ! "cut (behead)"
-tanggal        VConjReg ; ! "cut (remove)"
-sirá'          VConjReg ; ! "damage"
-sayaw          VConjReg ; ! "dance"
-nagsasayaw     VConjReg ; ! "nagsayaw"
-linlang        VConjReg ; ! "deceive"
-dalá           VConjReg ; ! "deliver"
-alís           VConjReg ; ! "depart"
-sirá'          VConjReg ; ! "destroy"
-sirá'          VConjReg ; ! "destroy (character)"
-unlad          VConjReg ; ! "develop"
-patay          VConjReg ; ! "die"
-hatí'          VConjReg ; ! "divide"
-hílo           VConjReg ; ! "dizzy"
-gáwa'          VConjReg ; ! "do"
-guhit          VConjReg ; ! "draw (picture)"
-bihis          VConjReg ; ! "dress (put on)"
-hubad          VConjReg ; ! "dress (remove)"
-inom           VConjReg ; ! "drink"
-maneho         VConjReg ; ! "drive"
-hulog          VConjReg ; ! "drop"
-bagsak         VConjReg ; ! "dropdown"
-bába'          VConjReg ; ! "dropoff"
-hatíd          VConjReg ; ! "drop (someone)"
-kain           VConjReg ; ! "eat"
-táas           VConjReg ; ! "elevate"
-tanan          VConjReg ; ! "elope"
-yakap          VConjReg ; ! "embrace"
-sayá           VConjReg ; ! "enjoy"
-pasok          VConjReg ; ! "enter (a place)"
-suót           VConjReg ; ! "enter into"
-libang         VConjReg ; ! "entertain"
-burá           VConjReg ; ! "erase"
-surí'          VConjReg ; ! "examine (analyse)"
-tingín         VConjReg ; ! "examine (medical)"
-sulit          VConjReg ; ! "examine (test)"
-ása            VConjReg ; ! "expect"
-lábas          VConjReg ; ! "exit"
-hárap          VConjReg ; ! "face (something)"
-hulog          VConjReg ; ! "fall"
-saká           VConjReg ; ! "farm"
-útot           VConjReg ; ! "fart"
-kain           VConjReg ; ! "feed"
-damdám         VConjReg ; ! "feel (bad)"
-dama           VConjReg ; ! "feel (something)"
-gáling         VConjReg ; ! "feel (better)"
-laban          VConjReg ; ! "fight"
-punó'          VConjReg ; ! "fill (container)"
-hanap          VConjReg ; ! "find"
-isdá'          VConjReg ; ! "fish"
-lípad          VConjReg ; ! "fly"
-súnod          VConjReg ; ! "follow after"
-limot          VConjReg ; ! "forget (someone)"
-limot          VConjReg ; ! "forget (something)"
-tákot          VConjReg ; ! "frighten (someone)"
-búsog          VConjReg ; ! "full (with food)"
-púno'          VConjReg ; ! "full (become)"
-sugal          VConjReg ; ! "gamble"
-kuhá'          VConjReg ; ! "get"
-regalo         VConjReg ; ! "gift (to give)"
-bigay          VConjReg ; ! "give"
-sukó'          VConjReg ; ! "give (surrender)"
-puntá          VConjReg ; ! "go (to a place)"
-layas          VConjReg ; ! "go away"
-babá'          VConjReg ; ! "go down"
-tuloy          VConjReg ; ! "go on"
-labas          VConjReg ; ! "go out"
-akyat          VConjReg ; ! "go up"
-paalam         VConjReg ; ! "goodbye (to say)"
-tápos          VConjReg ; ! "graduate (from university)"
-bigay          VConjReg ; ! "grant (money/chance)"
-bati'          VConjReg ; ! "greet (someone)"
-laki           VConjReg ; ! "grow (become big)"
-bantay         VConjReg ; ! "guard (look after)"
-gupit          VConjReg ; ! "haircut (to have)"
-kamay          VConjReg ; ! "hand (to use it)"
-ábot           VConjReg ; ! "hand (something to someone)"
-kamay          VConjReg ; ! "handshake (to give)"
-sampay         VConjReg ; ! "hang (clothes)"
-sayá           VConjReg ; ! "happy (become)"
-sayá           VConjReg ; ! "happy (to enjoy)"
-suklam         VConjReg ; ! "hate"
-gáling         VConjReg ; ! "heal"
-dínig          VConjReg ; ! "hear (something)"
-kinig          VConjReg ; ! "hear (someone)"
-init           VConjReg ; ! "heat (something)"
-kumusta        VConjReg ; ! "hello (to say)"
-tulong         VConjReg ; ! "help"
-tago'          VConjReg ; ! "hide (something)"
-tago'          VConjReg ; ! "hide (one's self or someone)"
-lakad          VConjReg ; ! "hike"
-suntok         VConjReg ; ! "hit (fist)"
-pukpok         VConjReg ; ! "hit (instrument)"
-tira           VConjReg ; ! "hit (someone)"
-hawak          VConjReg ; ! "hold"
-yakap          VConjReg ; ! "hug"
-dali'          VConjReg ; ! "hurry (to be)"
-sákit          VConjReg ; ! "hurt (transitive)"
-sákit          VConjReg ; ! "hurt (intransitive)"
-sákit          VConjReg ; ! "hurt (intransitive)"
-buti           VConjReg ; ! "improve"
-suot           VConjReg ; ! "insert"
-lagay          VConjReg ; ! "install"
-kilala         VConjReg ; ! "introduce (someone)"
-kita           VConjReg ; ! "introduce (something)"
-imbento        VConjReg ; ! "invent"
-imbita         VConjReg ; ! "invite"
-sali           VConjReg ; ! "involve"
-sali           VConjReg ; ! "join (game)"
-sama           VConjReg ; ! "join (someone)"
-loko           VConjReg ; ! "joke"
-talon          VConjReg ; ! "jump"
-tago'          VConjReg ; ! "keep (save)"
-tabí           VConjReg ; ! "keep (put aside)"
-pátay          VConjReg ; ! "kill"
-katay          VConjReg ; ! "kill (slaughter)"
-hálik          VConjReg ; ! "kiss"
-kátok          VConjReg ; ! "knock (door)"
-gibá'          VConjReg ; ! "knock down"
-kilala         VConjReg ; ! "know (someone)"
-tawa           VConjReg ; ! "laugh"
-labá           VConjReg ; ! "laundry"
-lágay          VConjReg ; ! "lay (put)"
-sinungaling    VConjReg ; ! "lie (tell a lie)"
-higa'          VConjReg ; ! "liedown"
-ilaw           VConjReg ; ! "lightup"
-kinig          VConjReg ; ! "listen"
-utang          VConjReg ; ! "loan"
-tingin         VConjReg ; ! "look"
-walá'          VConjReg ; ! "lose"
-ibig           VConjReg ; ! "love (someone romantically)"
-mahal          VConjReg ; ! "love (someone)"
-gáwa'          VConjReg ; ! "make"
-palengke       VConjReg ; ! "market (go to)"
-kasal          VConjReg ; ! "marry"
-timbang        VConjReg ; ! "measure (weight)"
-sukat          VConjReg ; ! "measure (dimension)"
-kíta           VConjReg ; ! "meet (someone)"
-lipat          VConjReg ; ! "move (transfer)"
-lipat          VConjReg ; ! "move (something)"
-usog           VConjReg ; ! "move (someone)"
-usog           VConjReg ; ! "move (something)"
-siesta         VConjReg ; ! "nap"
-nagpahinga     VConjReg ; ! "pahinga"
-kailangan      VConjReg ; ! "need"
-hindí'         VConjReg ; ! "no (to say no)"
-tángo'         VConjReg ; ! "nod"
-ingay          VConjReg ; ! "noise"
-ingay          VConjReg ; ! "noise"
-súnod          VConjReg ; ! "obey"
-másid          VConjReg ; ! "observe"
-okupá          VConjReg ; ! "occupy"
-yari'          VConjReg ; ! "occur"
-búkas          VConjReg ; ! "open (something)"
-búkas          VConjReg ; ! "open (by itself)"
-utos           VConjReg ; ! "order (someone*)"
-order          VConjReg ; ! "order (something**)"
-pinta          VConjReg ; ! "paint (art)"
-pinta          VConjReg ; ! "paint (on an object)"
-garahe         VConjReg ; ! "park (in the garage)"
-parada         VConjReg ; ! "park (parking lot)"
-pasa           VConjReg ; ! "pass (exam)"
-daan           VConjReg ; ! "pass by"
-pasa           VConjReg ; ! "pass on"
-ábot           VConjReg ; ! "pass (to someone)"
-sanlá'         VConjReg ; ! "pawn"
-bayad          VConjReg ; ! "pay"
-silip          VConjReg ; ! "peek"
-pili'          VConjReg ; ! "pick (choose)"
-dampot         VConjReg ; ! "pick (something)"
-sundó'         VConjReg ; ! "pick (someone)"
-lagay          VConjReg ; ! "place"
-tanim          VConjReg ; ! "plant"
-laró'          VConjReg ; ! "play (game)"
-tugtog         VConjReg ; ! "play (instrument)"
-pangako'       VConjReg ; ! "promise"
-turo'          VConjReg ; ! "point"
-buhos          VConjReg ; ! "pour"
-simangot       VConjReg ; ! "pout"
-dasal          VConjReg ; ! "pray"
-handá'         VConjReg ; ! "prepare (food)"
-handá'         VConjReg ; ! "prepare (get ready)"
-plantsa        VConjReg ; ! "press (iron)"
-ganda          VConjReg ; ! "pretty (become)"
-ganda          VConjReg ; ! "pretty (make one's self)"
-pigil          VConjReg ; ! "prevent (oneself)"
-promote        VConjReg ; ! "promote (someone/job)"
-taguyod        VConjReg ; ! "promote (something)"
-hila           VConjReg ; ! "pull"
-tulak          VConjReg ; ! "push"
-lagay          VConjReg ; ! "put"
-pasok          VConjReg ; ! "puta (hole)"
-subo'          VConjReg ; ! "put (the mouth)"
-bukas          VConjReg ; ! "put (turn on)"
-suot           VConjReg ; ! "put (clothes)"
-alis           VConjReg ; ! "put off"
-bába'          VConjReg ; ! "put down"
-tanong         VConjReg ; ! "question"
-bilis          VConjReg ; ! "quick (to make it)"
-tahimik        VConjReg ; ! "quiet"
-ayaw           VConjReg ; ! "quit"
-arúga'         VConjReg ; ! "raise (animals)"
-alaga          VConjReg ; ! "raise (baby sit)"
-laki           VConjReg ; ! "raise (children)"
-taas           VConjReg ; ! "raise (hand)"
-abot           VConjReg ; ! "reach (something)"
-datingrating   VConjReg ; ! "reach (destination)"
-basa           VConjReg ; ! "read (something)"
-tanggap        VConjReg ; ! "receive"
-ayaw           VConjReg ; ! "refuse"
-tanggi         VConjReg ; ! "reject"
-alala          VConjReg ; ! "remember"
-hubad          VConjReg ; ! "remove (clothes)"
-alis           VConjReg ; ! "remove  (something)"
-alis           VConjReg ; ! "remove (someone)"
-upa            VConjReg ; ! "rent (house)"
-arkila         VConjReg ; ! "rent (car)"
-renta          VConjReg ; ! "rent (general)"
-ulit           VConjReg ; ! "repeat (behavior)"
-ulit           VConjReg ; ! "repeat (work)"
-ulat           VConjReg ; ! "report (something)"
-balita         VConjReg ; ! "report (news)"
-sumbong        VConjReg ; ! "report (complain)"
-sauli'         VConjReg ; ! "return"
-palit          VConjReg ; ! "revise (change)"
-ulit           VConjReg ; ! "revise (rework)"
-sakay          VConjReg ; ! "ride"
-táyo'          VConjReg ; ! "rise (stand up)"
-bangon         VConjReg ; ! "rise up    (from lying)"
-nakaw          VConjReg ; ! "rob"
-gulong         VConjReg ; ! "roll"
-kusot          VConjReg ; ! "rub (wash)"
-hagod          VConjReg ; ! "rub (skin)"
-masahe         VConjReg ; ! "rub (massage)"
-takbo          VConjReg ; ! "run"
-lungkot        VConjReg ; ! "sad"
-sabi           VConjReg ; ! "say"
-takot          VConjReg ; ! "scare"
-kita           VConjReg ; ! "see"
-benta          VConjReg ; ! "sell"
-tahi'          VConjReg ; ! "sew"
-sigaw          VConjReg ; ! "shout"
-sigaw          VConjReg ; ! "shout (at each other)"
-pirma          VConjReg ; ! "sign (signature)"
-senyas         VConjReg ; ! "sign (to give a sign)"
-awit           VConjReg ; ! "sing"
-lubog          VConjReg ; ! "sink"
-upo'           VConjReg ; ! "sit"
-tulog          VConjReg ; ! "sleep"
-hiwa'          VConjReg ; ! "slice"
-ngiti          VConjReg ; ! "smile"
-ayos           VConjReg ; ! "sort"
-táyo'          VConjReg ; ! "stand"
-hinto'         VConjReg ; ! "stop"
-habla          VConjReg ; ! "sue"
-dusa           VConjReg ; ! "suffer"
-lunok          VConjReg ; ! "swallow"
-walis          VConjReg ; ! "sweep (clean)"
-kuha'          VConjReg ; ! "take"
-ingat          VConjReg ; ! "take (of one's self)"
-alaga'         VConjReg ; ! "take (of someone)"
-ingat          VConjReg ; ! "takecare    (something)"
-salita'        VConjReg ; ! "talk"
-turo'          VConjReg ; ! "teach"
-biro'          VConjReg ; ! "tease"
-sabi           VConjReg ; ! "tell"
-suri'          VConjReg ; ! "test (examine)"
-subok          VConjReg ; ! "test (try out)"
-higpit         VConjReg ; ! "tighten"
-isip           VConjReg ; ! "think"
-tapon          VConjReg ; ! "throw"
-lakbay         VConjReg ; ! "travel (voyage)"
-bakasyon       VConjReg ; ! "travel (vacation)"
-pasyal         VConjReg ; ! "travel (visit)"
-lipad          VConjReg ; ! "travel (by plane)"
-bukas          VConjReg ; ! "turnon"
-sara           VConjReg ; ! "turnoff"
-makinilya      VConjReg ; ! "type    (typewriter)"
-intindi        VConjReg ; ! "understand (something)"
-gamit          VConjReg ; ! "use"
-wala'          VConjReg ; ! "vanish"
-suway          VConjReg ; ! "violate (an order)"
-labag          VConjReg ; ! "violate (a law)"
-dalaw          VConjReg ; ! "visit"
-boto           VConjReg ; ! "vote"
-hintay         VConjReg ; ! "wait"
-lakad          VConjReg ; ! "walk"
-babala'        VConjReg ; ! "warn"
-hugas          VConjReg ; ! "wash"
-nood           VConjReg ; ! "watch (film/TV)"
-bantay         VConjReg ; ! "watchover"
-dilig          VConjReg ; ! "water (plants)"
-kasal          VConjReg ; ! "wed"
-bulong         VConjReg ; ! "whisper"
-sipol          VConjReg ; ! "whistle"
-wagi'          VConjReg ; ! "win"
-punas          VConjReg ; ! "wipe"
-kuha           VConjReg ; ! "withdraw (money)"
-alis           VConjReg ; ! "withdraw (from activity)"
-taka           VConjReg ; ! "wonder (be puzzled)"
-mangha'        VConjReg ; ! "wonder (be amazed)"
-trabaho        VConjReg ; ! "work"
-alala          VConjReg ; ! "worry"
-samba          VConjReg ; ! "worship"
-balot          VConjReg ; ! "wrap"
-sulat          VConjReg ; ! "write (something)"
-sulat          VConjReg ; ! "write (someone)"
-hikab          VConjReg ; ! "yawn"
- oo             VConjReg ; ! "yes (to say yes to)"

@@ -20,4 +20,4 @@ tgl-ceb.automorf.hfst: tgl-morph.fst
 	
 
 clean: 
-	rm tgl-gen.fst tgl-morph.fst tgl-twol.fst tgl-lexc.fst
+	rm tgl-ceb.automorf.hfst tgl-gen.fst tgl-morph.fst tgl-twol.fst tgl-lexc.fst

@@ -12,7 +12,8 @@ class lexcGenerator:
 	def run(self):
 		self.output.write("LEXICON %s\n" % self.lex)
 		for i in self.input:
-			self.output.write("@R.ALPH.%s@%s\t%s ;\n" % (i[0],i[1:].split(' ')[0].strip(), self.nextlex))
+			x = "@R.ALPH.%s@%s\t%s ;\n" % (i[0],i[1:].split(' ')[0].strip(), self.nextlex)
+			self.output.write(x)
 		self.input.close()
 		self.output.close()
 
