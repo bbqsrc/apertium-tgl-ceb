@@ -3,9 +3,7 @@ Multichar_Symbols  +V +Inf +Cont +Prog +Comp +Imp
                    +Act1 +Act2 +Act3 +Act4 
 				   +Loc +Ben +Ins +Rea 
 				   +Dir +Recip ! unused at the moment
-                   +INF ! this for testing
-
-                   %> %^UM %^INF %^IN %^FILL %^INDRE
+                   %>
 
                    @R.ALPH.a@ @P.ALPH.a@
                    @R.ALPH.b@ @P.ALPH.b@
@@ -33,50 +31,29 @@ Multichar_Symbols  +V +Inf +Cont +Prog +Comp +Imp
                    @R.ALPH.x@ @P.ALPH.x@
                    @R.ALPH.y@ @P.ALPH.y@
                    @R.ALPH.z@ @P.ALPH.z@
+ 
+                   @P.PREF.i@ @R.PREF.i@
+                   @P.PREF.mag@ @R.PREF.mag@
+                   @P.PREF.ma@ @R.PREF.ma@
+                   @P.PREF.mang@ @R.PREF.mang@
+                   @P.PREF.ipaN@ @R.PREF.ipaN@
+                   @P.PREF.ika@ @R.PREF.ika@
+                   @P.PREF.CV@ @R.PREF.CV@
+                   @P.PREF.nag@ @R.PREF.nag@
+                   @P.PREF.na@ @R.PREF.na@
+                   @P.PREF.nang@ @R.PREF.nang@
+                   @P.PREF.ipinaN@ @R.PREF.ipinaN@
+                   @P.PREF.ikina@ @R.PREF.ikina@
+                   @P.PREF.pang@ @R.PREF.pang@
+                   @P.PREF.pag@ @R.PREF.pag@
 
+                   @P.INFX.in@ @R.INFX.in@
+				   @P.INFX.um@ @R.INFX.um@
 
-
-                   @D.PREF@ @C.PREF@
-				   @D.INFX@ @C.INFX@
-
-				   @P.PREF.i@
-                   @P.PREF.mag@
-                   @P.PREF.ma@
-                   @P.PREF.mang@
-                   @P.PREF.ipaN@
-                   @P.PREF.ika@
-                   @P.PREF.CV@
-                   @P.PREF.nag@
-                   @P.PREF.na@
-                   @P.PREF.nang@
-                   @P.PREF.ipinaN@
-                   @P.PREF.ikina@
-                   @P.PREF.pang@
-                   @P.PREF.pag@
-                  
-				   @R.PREF.i@
-                   @R.PREF.mag@
-                   @R.PREF.ma@
-                   @R.PREF.mang@
-                   @R.PREF.ipaN@
-                   @R.PREF.ika@
-                   @R.PREF.CV@
-                   @R.PREF.nag@
-                   @R.PREF.na@
-                   @R.PREF.nang@
-                   @R.PREF.ipinaN@
-                   @R.PREF.ikina@
-                   @R.PREF.pang@
-                   @R.PREF.pag@
-
-                   @P.INFX.in@
-				   @P.INFX.um@
-
-				   @R.INFX.in@
-				   @R.INFX.um@
-
-				   @P.CV.PREF@ @R.CV.PREF@ @D.CV@
+				   @P.CV.PREF@ @R.CV.PREF@
 				   @P.CV.INFX@ @R.CV.INFX@
+
+                   @D.PREF@ @D.INFX@ @D.CV@
 
 LEXICON Root
 Prefixes ;

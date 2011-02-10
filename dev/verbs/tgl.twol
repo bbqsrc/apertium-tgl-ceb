@@ -65,21 +65,9 @@ b:0 <=> :m %>:0 _ ;
 !€ %^UM%>bili
 !€ 00bumili
 
-"S realisation as Consonant and -um-"
+"S realisation as Consonant and Infixing"
 S:DD <=> _ InfA InfB E: %+: DD ;
 	where DD in Cons ;
-
-!"F realisation as Vowel and -um-"
-!F:WW <=> _ %+: (Cons:) WW;
-!	where WW in Vow ;
-
-!"Infix symbol 1"
-!X:IX <=> _ IX ;
-!	where IX in InfA;
-
-!"Infix symbol 2"
-!Y:IY <=> _ IY ;
-!	where IY in InfB;
 
 "R realisation as Consonant"
 R:CC <=> _ E: %+: CC ; 
