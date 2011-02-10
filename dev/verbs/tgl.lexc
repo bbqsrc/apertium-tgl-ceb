@@ -46,20 +46,6 @@ Multichar_Symbols  +V +Inf +Cont +Prog +Comp +Imp
                    @P.PREF.ipaN@
                    @P.PREF.ika@
                    @P.PREF.CV@
-                   @P.PREF.iCV@
-                   @P.PREF.magCV@
-                   @P.PREF.maCV@
-                   @P.PREF.mangCV@
-                   @P.PREF.ipaNCV@
-                   @P.PREF.ikaCV@
-                   @P.PREF.CinV@
-                   @P.PREF.iCinV@
-                   @P.PREF.CumV@
-                   @P.PREF.nagCV@
-                   @P.PREF.naCV@
-                   @P.PREF.nangCV@
-                   @P.PREF.ipinaNCV@
-                   @P.PREF.ikinaCV@
                    @P.PREF.nag@
                    @P.PREF.na@
                    @P.PREF.nang@
@@ -75,20 +61,6 @@ Multichar_Symbols  +V +Inf +Cont +Prog +Comp +Imp
                    @R.PREF.ipaN@
                    @R.PREF.ika@
                    @R.PREF.CV@
-                   @R.PREF.iCV@
-                   @R.PREF.magCV@
-                   @R.PREF.maCV@
-                   @R.PREF.mangCV@
-                   @R.PREF.ipaNCV@
-                   @R.PREF.ikaCV@
-                   @R.PREF.CinV@
-                   @R.PREF.iCinV@
-                   @R.PREF.CumV@
-                   @R.PREF.nagCV@
-                   @R.PREF.naCV@
-                   @R.PREF.nangCV@
-                   @R.PREF.ipinaNCV@
-                   @R.PREF.ikinaCV@
                    @R.PREF.nag@
                    @R.PREF.na@
                    @R.PREF.nang@
@@ -174,43 +146,43 @@ LEXICON PartStems
 LEXICON RegSuffixes
 
 ! Pure infinitive
-@D.PREF@@D.INFX@+V+Inf:				#;
+@D.PREF@@D.CV@@D.INFX@+V+Inf:				#;
 
 !-------------!
 ! Infinitives !
 !-------------!
 ! Obj trigger I
-@D.PREF@@D.INFX@+V+Inf+Obj1:%>in	#; 
+@D.PREF@@D.CV@@D.INFX@+V+Inf+Obj1:%>in	#; 
 
 ! Obj Trigger II
-@R.PREF.i@@D.INFX@+V+Inf+Obj2:		#;
+@R.PREF.i@@D.CV@@D.INFX@+V+Inf+Obj2:		#;
 
 ! Obj Trigger III
-@D.PREF@@D.INFX@+V+Inf+Obj3:%>an	#; 
+@D.PREF@@D.CV@@D.INFX@+V+Inf+Obj3:%>an	#; 
 
 ! Actor Trigger I
-@D.PREF@@R.INFX.um@+V+Inf+Act1:		#;
+@D.PREF@@D.CV@@R.INFX.um@+V+Inf+Act1:		#;
 
 ! Actor Trigger II 
-@R.PREF.mag@@D.INFX@+V+Inf+Act2:		#;
+@R.PREF.mag@@D.CV@@D.INFX@+V+Inf+Act2:		#;
 
 ! Actor Trigger III
-@R.PREF.ma@@D.INFX@+V+Inf+Act3:		#;
+@R.PREF.ma@@D.CV@@D.INFX@+V+Inf+Act3:		#;
 
 ! Actor Trigger IV
-@R.PREF.mang@@D.INFX@+V+Inf+Act4:		#;
+@R.PREF.mang@@D.CV@@D.INFX@+V+Inf+Act4:		#;
 
 ! Locative Trigger
-@D.PREF@@D.INFX@+V+Inf+Loc:%>an		#;
+@D.PREF@@D.CV@@D.INFX@+V+Inf+Loc:%>an		#;
 
 ! Benefactive Trigger
-@R.PREF.i@@D.INFX@+V+Inf+Ben:			#;
+@R.PREF.i@@D.CV@@D.INFX@+V+Inf+Ben:			#;
 
 ! Instrument Trigger
-@R.PREF.ipaN@@D.INFX@+V+Inf+Ins:			#;
+@R.PREF.ipaN@@D.CV@@D.INFX@+V+Inf+Ins:			#;
 
 ! Reason Trigger
-@R.PREF.ika@@D.INFX@+V+Inf+Rea:			#;
+@R.PREF.ika@@D.CV@@D.INFX@+V+Inf+Rea:			#;
 
 !---------------!
 ! Contemplative !
@@ -222,10 +194,10 @@ LEXICON RegSuffixes
 @R.PREF.i@@R.CV.PREF@+V+Cont+Obj2:		#;
 
 ! Obj Trigger III
-@R.CV.PREF@@D.INFX@+V+Cont+Obj3:%>an	#; 
+@R.CV.PREF@@D.PREF@@D.INFX@+V+Cont+Obj3:%>an	#; 
 
 ! Actor Trigger I
-@R.CV.PREF@@D.INFX@+V+Cont+Act1:		#;
+@R.CV.PREF@@D.PREF@@D.INFX@+V+Cont+Act1:		#;
 
 ! Actor Trigger II 
 @R.PREF.mag@@R.CV.PREF@@D.INFX@+V+Cont+Act2:		#;
@@ -244,11 +216,11 @@ LEXICON RegSuffixes
 
 ! Instrument Trigger
 ! TODO
-@R.PREF.ipaNCV@@D.INFX@+V+Cont+Ins:			#;
+@R.PREF.ipaN@@R.CV.PREF@@D.INFX@+V+Cont+Ins:			#;
 
 !TODO
 ! Reason Trigger
-@R.PREF.ikaCV@@D.INFX@+V+Cont+Rea:			#;
+@R.PREF.ika@@R.CV.PREF@@D.INFX@+V+Cont+Rea:			#;
 
 !-------------!
 ! Progressive !
@@ -257,94 +229,94 @@ LEXICON RegSuffixes
 @D.PREF@@R.CV.INFX@@R.INFX.in@+V+Prog+Obj1:		#;  
 
 ! Obj Trigger II
-@R.PREF.i@@R.INFX.in@+V+Prog+Obj2:		#;
+@R.PREF.i@@R.CV.INFX@@R.INFX.in@+V+Prog+Obj2:		#;
 
 ! Obj Trigger III
-@D.PREF@@R.INFX.in@+V+Prog+Obj3:%>an	#; 
+@D.PREF@@R.CV.INFX@@R.INFX.in@+V+Prog+Obj3:%>an	#; 
 
 ! Actor Trigger I
 @D.PREF@@R.CV.INFX@@R.INFX.um@+V+Prog+Act1:		#;
 
 ! Actor Trigger II 
-@R.PREF.nagCV@@D.INFX@+V+Prog+Act2:		#;
+@R.PREF.nag@@R.CV.PREF@@D.INFX@+V+Prog+Act2:		#;
 
 ! Actor Trigger III
-@R.PREF.naCV@@D.INFX@+V+Prog+Act3:		#;
+@R.PREF.na@@R.CV.PREF@@D.INFX@+V+Prog+Act3:		#;
 
 ! Actor Trigger IV
-@R.PREF.nangCV@@D.INFX@+V+Prog+Act4:		#;
+@R.PREF.nang@@R.CV.PREF@@D.INFX@+V+Prog+Act4:		#;
 
 ! Locative Trigger
-@R.PREF.CinV@@D.INFX@+V+Prog+Loc:%>an		#;
+@D.PREF@@R.CV.INFX@@R.INFX.in@+V+Prog+Loc:%>an		#;
 
 ! Benefactive Trigger
-@R.PREF.iCinV@@D.INFX@+V+Prog+Ben:			#;
+@R.PREF.i@@R.CV.INFX@@R.INFX.in@+V+Prog+Ben:			#;
 
 ! Instrument Trigger
-@R.PREF.ipinaNCV@@D.INFX@+V+Prog+Ins:			#;
+@R.PREF.ipinaN@@R.CV.PREF@@D.INFX@+V+Prog+Ins:			#;
 
 ! Reason Trigger
-@R.PREF.ikinaCV@@D.INFX@+V+Prog+Rea:			#;
+@R.PREF.ikina@@R.CV.PREF@@D.INFX@+V+Prog+Rea:			#;
 
 
 !-------------!
 ! Completed   !
 !-------------!
 ! Obj trigger I
-@D.PREF@@R.INFX.in@+V+Comp+Obj1:		#;  
+@D.PREF@@D.CV@@R.INFX.in@+V+Comp+Obj1:		#;  
 
 ! Obj Trigger II
-@R.PREF.i@@R.INFX.in@+V+Comp+Obj2:		#;
+@R.PREF.i@@D.CV@@R.INFX.in@+V+Comp+Obj2:		#;
 
 ! Obj Trigger III
-@D.PREF@@R.INFX.in@+V+Comp+Obj3:%>an	#; 
+@D.PREF@@D.CV@@R.INFX.in@+V+Comp+Obj3:%>an	#; 
 
 ! Actor Trigger I
-@D.PREF@@R.INFX.um@+V+Comp+Act1:		#;
+@D.PREF@@D.CV@@R.INFX.um@+V+Comp+Act1:		#;
 
 ! Actor Trigger II 
-@R.PREF.nag@@D.INFX@+V+Comp+Act2:		#;
+@R.PREF.nag@@D.CV@@D.INFX@+V+Comp+Act2:		#;
 
 ! Actor Trigger III
-@R.PREF.na@@D.INFX@+V+Comp+Act3:		#;
+@R.PREF.na@@D.CV@@D.INFX@+V+Comp+Act3:		#;
 
 ! Actor Trigger IV
-@R.PREF.nang@@D.INFX@+V+Comp+Act4:		#;
+@R.PREF.nang@@D.CV@@D.INFX@+V+Comp+Act4:		#;
 
 ! Locative Trigger
-@D.PREF@@R.INFX.in@+V+Comp+Loc:%>an		#;
+@D.PREF@@D.CV@@R.INFX.in@+V+Comp+Loc:%>an		#;
 
 ! Benefactive Trigger
-@R.PREF.i@@R.INFX.in@+V+Comp+Ben:			#;
+@R.PREF.i@@D.CV@@R.INFX.in@+V+Comp+Ben:			#;
 
 ! Instrument Trigger
-@R.PREF.ipinaN@@D.INFX@+V+Comp+Ins:			#;
+@R.PREF.ipinaN@@D.CV@@D.INFX@+V+Comp+Ins:			#;
 
 ! Reason Trigger
-@R.PREF.ikina@@D.INFX@+V+Comp+Rea:			#;
+@R.PREF.ikina@@D.CV@@D.INFX@+V+Comp+Rea:			#;
 
 !-------------!
 ! Imperative  !
 !-------------!
 
 ! Obj trigger I
-@D.PREF@@D.INFX@+V+Imp+Obj1:		#;
-@D.PREF@@D.INFX@+V+Imp+Obj1:%>a		#;
+@D.PREF@@D.CV@@D.INFX@+V+Imp+Obj1:		#;
+@D.PREF@@D.CV@@D.INFX@+V+Imp+Obj1:%>a		#;
 
 ! Obj Trigger II
-@D.PREF@@D.INFX@+V+Imp+Obj2:%>an	#; 
+@D.PREF@@D.CV@@D.INFX@+V+Imp+Obj2:%>an	#; 
 
 ! Obj Trigger III
-@D.PREF@@D.INFX@+V+Imp+Obj3:%>i		#;
+@D.PREF@@D.CV@@D.INFX@+V+Imp+Obj3:%>i		#;
 
 ! Actor Trigger I
-@D.PREF@@D.INFX@+V+Imp+Act1:		#;
+@D.PREF@@D.CV@@D.INFX@+V+Imp+Act1:		#;
 
 ! Actor Trigger II 
-@R.PREF.pag@@D.INFX@+V+Imp+Act2:		#;
+@R.PREF.pag@@D.CV@@D.INFX@+V+Imp+Act2:		#;
 
 ! Actor Trigger IV
-@R.PREF.pang@@D.INFX@+V+Imp+Act4:		#;
+@R.PREF.pang@@D.CV@@D.INFX@+V+Imp+Act4:		#;
 
 END
 

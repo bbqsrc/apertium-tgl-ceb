@@ -18,35 +18,38 @@ tests = {
 	"bili":{
 		"V":{
 			"Inf":{
-				"Obj1":"bilhin", "Obj2":"ibili", "Obj3":"bilian",
-				"Act1":"bumian", "Act2":"magbili", "Act3":"mabili", "Act4":"mangbili",
-				"Loc":"bilian", "Ben":"ibili", "Ins":"ipanbili", "Rea":"ikabili"
-			}#, 
+				"Obj1":["bilhin"], "Obj2":["ibili"], "Obj3":["bilian"],
+				"Act1":["bumili"], "Act2":["magbili"], "Act3":["mabili"], "Act4":["mangbili"],
+				"Loc":["bilian"], "Ben":["ibili"], "Ins":["ipambili", "ipanbili", "ipabili"], 
+				"Rea":["ikabili"]
+			}, 
+			"Cont":{
+				"Obj1":["bibilhin"], "Obj2":["ibibili"], "Obj3":["bibilian"],
+				"Act1":["bibili"], "Act2":["magbibili"], "Act3":["mabibili"], "Act4":["mangbibili"],
+				"Loc":["bibilian"], "Ben":["ibibili"], "Ins":["ipambibili", "ipanbibili", "ipabibili"], 
+				"Rea":["ikabibili"]
+			}, 
+			"Prog":{
+				"Obj1":["binibili"], "Obj2":["ibinibili"], "Obj3":["binibilian"],
+				"Act1":["bumibili"], "Act2":["nagbibili"], "Act3":["nabibili"], 
+				"Act4":["nangbibili"], "Loc":["binibilian"], "Ben":["ibinibili"], 
+				"Ins":["ipinanbibili", "ipinambibili", "ipinabibili"], "Rea":["ikinabibili"]
+			}, 
+			"Comp":{
+				"Obj1":["binili"], "Obj2":["ibinili"], "Obj3":["binilian"],
+				"Act1":["bumili"], "Act2":["nagbili"], "Act3":["nabili"], "Act4":["nangbili"],
+				"Loc":["binilian"], "Ben":["ibinili"], "Ins":["ipinambili", "ipinanbili", "ipinabili"], 
+				"Rea":["ikinabili"]
+			}, 
+			"Imp":{
+				"Obj1":["bili", "bilia"], "Obj2":["bilian"], "Obj3":["bilhi"],
+				"Act1":["bili"], "Act2":["pagbili"], "Act4":["pangbili"]
+			}
 		}
 	}
 }
 
 """
-			"Cont":{
-				"Obj1":"bili", "Obj2":"bili", "Obj3":"bili",
-				"Act1":"bili", "Act2":"bili", "Act3":"bili", "Act4":"bili",
-				"Loc":"bili", "Ben":"bili", "Ins":"bili", "Rea":"bili"
-			}, 
-			"Prog":{
-				"Obj1":"bili", "Obj2":"bili", "Obj3":"bili",
-				"Act1":"bili", "Act2":"bili", "Act3":"bili", "Act4":"bili",
-				"Loc":"bili", "Ben":"bili", "Ins":"bili", "Rea":"bili"
-			}, 
-			"Comp":{
-				"Obj1":"bili", "Obj2":"bili", "Obj3":"bili",
-				"Act1":"bili", "Act2":"bili", "Act3":"bili", "Act4":"bili",
-				"Loc":"bili", "Ben":"bili", "Ins":"bili", "Rea":"bili"
-			}, 
-			"Imp":{
-				"Obj1":"bili", "Obj2":"bili", "Obj3":"bili",
-				"Act1":"bili", "Act2":"bili", "Act3":"bili", "Act4":"bili",
-				"Loc":"bili", "Ben":"bili", "Ins":"bili", "Rea":"bili"
-			}
 """
 class HfstTester:
 	def __init__(self):
@@ -73,13 +76,13 @@ class HfstTester:
 						for i in res:
 							if i.strip() != '':
 								r = i.split('\t')[1].strip()
-								if sform == r:
-									print "%s => %s:%s [PASS]" % (lform, sform, r) 
+								if r in sform:
+									print "%s => %s:%s [PASS]" % (lform, r, r) 
 									self.count[0] += 1
 								else:
 									print "%s => %s:%s [FAIL]" % (lform, sform, r)
 									self.count[1] += 1
-		print "%s - Passes: %d, Fails: %d" % (filename, self.count[0], self.count[1])
+		print "%s - Passes: %d, Fails: %d, Total: %d" % (filename, self.count[0], self.count[1], self.count[0] + self.count[1])
 
 							
 					
