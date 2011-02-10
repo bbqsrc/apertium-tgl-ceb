@@ -103,32 +103,35 @@ Multichar_Symbols  +V +Inf +Cont +Prog +Comp +Imp
 				   @R.INFX.in@
 				   @R.INFX.um@
 
-				   @P.INFX.CV@ @R.INFX.CV@
-
-! Possible optimisations:
-!
-! * Separate verb situations into LEXICONs
+				   @P.CV.PREF@ @R.CV.PREF@ @D.CV@
+				   @P.CV.INFX@ @R.CV.INFX@
 
 LEXICON Root
 Prefixes ;
 
 LEXICON Prefixes
-@P.PREF.i@:i		CVCheck ;
-!@P.PREF.iCV@:iRE+	Infixes;
-@P.PREF.mag@:mag	CVCheck ;
-@P.PREF.ma@:ma		CVCheck ;
-@P.PREF.mang@:mang	CVCheck ;
-@P.PREF.ika@:ika	CVCheck ;
-@P.PREF.ipaN@:ipaN	CVCheck ;
-					CVCheck ;
+@P.PREF.i@:i			CVCheck ;
+@P.PREF.mag@:mag		CVCheck ;
+@P.PREF.ma@:ma			CVCheck ;
+@P.PREF.mang@:mang		CVCheck ;
+@P.PREF.ipaN@:ipaN		CVCheck ;
+@P.PREF.ika@:ika		CVCheck ;
+
+@P.PREF.nag@:nag		CVCheck ;
+@P.PREF.na@:na			CVCheck ;
+@P.PREF.nang@:nang		CVCheck ;
+@P.PREF.ipinaN@:ipinaN 	CVCheck ;
+@P.PREF.ikina@:ikina	CVCheck ;
+
+@P.PREF.pag@:pag		CVCheck ;
+@P.PREF.pang@:pang		CVCheck ;
+						CVCheck ;
 
 LEXICON CVCheck
-@P.INFX.CV@:RE+		Infixes;
-@P.INFX.CV@:RE+		Alph;
-@P.INFX.CV@:SumE+	Alph;
-@P.INFX.CV@:SinE+	Alph;
-					Infixes;
-					Alph;
+@P.CV.PREF@:RE+					Alph;
+@P.CV.INFX@@P.INFX.um@:SumE+	Alph;
+@P.CV.INFX@@P.INFX.in@:SinE+	Alph;
+								Alph;
 
 LEXICON Alph
 @P.ALPH.a@a	Infixes ;
@@ -159,9 +162,9 @@ LEXICON Alph
 @P.ALPH.z@z	Infixes ;
 
 LEXICON Infixes
-@P.INFX.um@:um	PartStems ;
-@P.INFX.in@:in	PartStems ;
-				PartStems ;
+@D.CV@@P.INFX.um@:um	PartStems ;
+@D.CV@@P.INFX.in@:in	PartStems ;
+						PartStems ;
 
 LEXICON PartStems 
 @R.ALPH.b@ili	RegSuffixes ;
@@ -213,35 +216,37 @@ LEXICON RegSuffixes
 ! Contemplative !
 !---------------!
 ! Obj trigger I
-@D.PREF@@R.INFX.CV@+V+Cont+Obj1:%>in	#;  
+@D.PREF@@R.CV.PREF@@D.INFX@+V+Cont+Obj1:%>in	#;  
 
 ! Obj Trigger II
-@R.PREF.i@@D.INFX@+V+Cont+Obj2:		#;
+@R.PREF.i@@R.CV.PREF@+V+Cont+Obj2:		#;
 
 ! Obj Trigger III
-@R.PREF.CV@@D.INFX@+V+Cont+Obj3:%>an	#; 
+@R.CV.PREF@@D.INFX@+V+Cont+Obj3:%>an	#; 
 
 ! Actor Trigger I
-@R.PREF.CV@@D.INFX@+V+Cont+Act1:		#;
+@R.CV.PREF@@D.INFX@+V+Cont+Act1:		#;
 
 ! Actor Trigger II 
-@R.PREF.magCV@@D.INFX@+V+Cont+Act2:		#;
+@R.PREF.mag@@R.CV.PREF@@D.INFX@+V+Cont+Act2:		#;
 
 ! Actor Trigger III
-@R.PREF.maCV@@D.INFX@+V+Cont+Act3:		#;
+@R.PREF.ma@@R.CV.PREF@@D.INFX@+V+Cont+Act3:		#;
 
 ! Actor Trigger IV
-@R.PREF.mangCV@@D.INFX@+V+Cont+Act4:		#;
+@R.PREF.mang@@R.CV.PREF@@D.INFX@+V+Cont+Act4:		#;
 
 ! Locative Trigger
-@R.PREF.CV@@D.INFX@+V+Cont+Loc:%>an		#;
+@D.PREF@@R.CV.PREF@@D.INFX@+V+Cont+Loc:%>an		#;
 
 ! Benefactive Trigger
-@R.PREF.iCV@@D.INFX@+V+Cont+Ben:			#;
+@R.PREF.i@@R.CV.PREF@@D.INFX@+V+Cont+Ben:			#;
 
 ! Instrument Trigger
+! TODO
 @R.PREF.ipaNCV@@D.INFX@+V+Cont+Ins:			#;
 
+!TODO
 ! Reason Trigger
 @R.PREF.ikaCV@@D.INFX@+V+Cont+Rea:			#;
 
@@ -249,7 +254,7 @@ LEXICON RegSuffixes
 ! Progressive !
 !-------------!
 ! Obj trigger I
-@D.PREF@+V+Prog+Obj1:		#;  
+@D.PREF@@R.CV.INFX@@R.INFX.in@+V+Prog+Obj1:		#;  
 
 ! Obj Trigger II
 @R.PREF.i@@R.INFX.in@+V+Prog+Obj2:		#;
@@ -258,7 +263,7 @@ LEXICON RegSuffixes
 @D.PREF@@R.INFX.in@+V+Prog+Obj3:%>an	#; 
 
 ! Actor Trigger I
-@D.PREF@+V+Prog+Act1:		#;
+@D.PREF@@R.CV.INFX@@R.INFX.um@+V+Prog+Act1:		#;
 
 ! Actor Trigger II 
 @R.PREF.nagCV@@D.INFX@+V+Prog+Act2:		#;
