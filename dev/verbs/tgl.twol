@@ -2,9 +2,12 @@ Alphabet
 
   %+:0 b c d f g h j k l m n p q r s t v w x y z a e i o u
 
-  E:a E:i E:o E:u E:e
-  R:p R:b R:t R:k R:l 
-  N:m N:n
+  !E:a E:i E:o E:u E:e
+  !R:p R:b R:t R:k R:l 
+  !N:m N:n
+  E:0 R:0 N:0
+  X:0 Y:0 S:0 F:0
+
   %+:0 %>:0 %^UM:0 %^INF:0 %^IN:0 %^FILL:0 %^INDRE:0 U:0;
 
 Sets
@@ -13,33 +16,35 @@ Sets
   Vow = a e i o u ;
   Nas = m n ;
   Segm = Cons Vow Nas ;
+  InfA = u i ;
+  InfB = m n ;
 
 Rules
 ! bili>in --> bilhin
-!!"Replace final i with h before suffixes beginning with i" 
-!!i:h <=> _ %>:0 i ;
+"Replace final i with h before suffixes beginning with i" 
+i:h <=> _ %>:0 i ;
 
 !€ bili%>in
 !€ bilh0in
 
 ! man>bili --> mambili
 
-!!"Nasal assimilation"
-!!n:m <=> _ %>:0 b: ; 
+"Nasal assimilation"
+n:m <=> _ %>:0 b: ; 
 
 !€ man%>bili
 !€ mam0bili
 
 ! mambili --> mamili
 
-!!"Nasal deletion"
-!!b:0 <=> :m %>:0 _ ;
+"Nasal deletion"
+b:0 <=> :m %>:0 _ ;
 
 !€ mam%>bili
 !€ mam00ili
 
-"Infix -um-"
-U:0 => _ %+:0 R:R 0:u 0:m E:E ; 
+!"Infix -um-"
+!U:0 => _ %+:0 R:R 0:u 0:m E:E ; 
 
 !"Infixation of -um-"
 !%^INF:0 <=> #:0 Cons 0:u 0:m Segm+ _ ;
@@ -60,6 +65,21 @@ U:0 => _ %+:0 R:R 0:u 0:m E:E ;
 !€ %^UM%>bili
 !€ 00bumili
 
+"S realisation as Consonant and -um-"
+S:DD <=> _ InfA InfB E: %+: DD ;
+	where DD in Cons ;
+
+!"F realisation as Vowel and -um-"
+!F:WW <=> _ %+: (Cons:) WW;
+!	where WW in Vow ;
+
+!"Infix symbol 1"
+!X:IX <=> _ IX ;
+!	where IX in InfA;
+
+!"Infix symbol 2"
+!Y:IY <=> _ IY ;
+!	where IY in InfB;
 
 "R realisation as Consonant"
 R:CC <=> _ E: %+: CC ; 
