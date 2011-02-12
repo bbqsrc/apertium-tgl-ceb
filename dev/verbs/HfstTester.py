@@ -10,10 +10,10 @@
 import sys
 if sys.hexversion < 0x02070000:
 	print "You must use Python 2.7 or greater."
-	sys.exit()
+	sys.exit(255)
 
 from subprocess import *
-import os, argparse, json
+import os, argparse, json, yaml
 
 def colourise(string, opt=None):
 	def red(s="", r="\033[m"):
@@ -77,13 +77,21 @@ class HfstTester:
 			nargs=1, required=False, help="Which test to run (Default: all)")
 		argparser.add_argument("-c", "--colour", dest="colour", action="store_true",
 			help="Colours the output")
-		argparser.add_argument("test_file", nargs=1, help="JSON file with test rules")
+		argparser.add_argument("test_file", nargs=1, help="YAML/JSON file with test rules")
 		self.args = argparser.parse_args()
 		
-		json_file = json.load(open(self.args.test_file[0]))
-		self.gen = json_file["Config"]["Gen"]
-		self.morph = json_file["Config"]["Morph"]
-		self.tests = json_file["Tests"]
+
+		try:
+			f = yaml.load(open(self.args.test_file[0]))
+		except:
+			try:
+				f = json.load(open(self.args.test_file[0]))
+			except:
+				print "File not YAML or JSON format. Bailing out."
+				sys.exit(1)
+		self.gen = f["Config"]["Gen"]
+		self.morph = f["Config"]["Morph"]
+		self.tests = f["Tests"]
 		self.run_tests(self.args.test)
 	
 	def c(self, s, o=None):
