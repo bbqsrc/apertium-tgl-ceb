@@ -86,8 +86,9 @@ class HfstTester:
 		except:
 			try:
 				f = json.load(open(self.args.test_file[0]))
-			except:
-				print "File not YAML or JSON format. Bailing out."
+			except Exception, e:
+				print "File not valid YAML or JSON. Bailing out."
+				print "Check your YAML for spurious hidden tabs."
 				sys.exit(1)
 		self.gen = f["Config"]["Gen"]
 		self.morph = f["Config"]["Morph"]
