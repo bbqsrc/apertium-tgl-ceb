@@ -59,21 +59,21 @@ LEXICON Root
 Prefixes ;
 
 LEXICON Prefixes
-@P.PREF.i@:i			CVCheck ;
-@P.PREF.mag@:mag		CVCheck ;
-@P.PREF.ma@:ma			CVCheck ;
-@P.PREF.mang@:mang		CVCheck ;
-@P.PREF.ipaN@:ipaN		CVCheck ;
-@P.PREF.ika@:ika		CVCheck ;
+@P.PREF.i@:i%>			CVCheck ;
+@P.PREF.mag@:mag%>		CVCheck ;
+@P.PREF.ma@:ma%>			CVCheck ;
+@P.PREF.mang@:mang%>	CVCheck ;
+@P.PREF.ipaN@:ipaN%>		CVCheck ;
+@P.PREF.ika@:ika%>		CVCheck ;
 
-@P.PREF.nag@:nag		CVCheck ;
-@P.PREF.na@:na			CVCheck ;
-@P.PREF.nang@:nang		CVCheck ;
-@P.PREF.ipinaN@:ipinaN 	CVCheck ;
-@P.PREF.ikina@:ikina	CVCheck ;
+@P.PREF.nag@:nag%>		CVCheck ;
+@P.PREF.na@:na%>			CVCheck ;
+@P.PREF.nang@:nang%>		CVCheck ;
+@P.PREF.ipinaN@:ipinaN%> 	CVCheck ;
+@P.PREF.ikina@:ikina%>	CVCheck ;
 
-@P.PREF.pag@:pag		CVCheck ;
-@P.PREF.pang@:pang		CVCheck ;
+@P.PREF.pag@:pag%>		CVCheck ;
+@P.PREF.pang@:pang%>		CVCheck ;
 						CVCheck ;
 
 LEXICON CVCheck
